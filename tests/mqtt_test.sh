@@ -15,9 +15,13 @@ echo "⏳ Esperando procesamiento..."
 sleep 2
 
 echo "🔎 Consultando base de datos TimescaleDB..."
+
+POSTGRES_DB=${POSTGRES_DB:-sensordata}
+POSTGRES_USER=${POSTGRES_USER:-sensoruser}
+
 docker exec -it chirpstack_listener_app python -m app.init_db
 docker exec -it chirpstack_timescaledb \
-psql -U sensoruser -d sensordata \
+psql -U "$POSTGRES_USER" -d "$POSTGRES_DB" \
 -c "SELECT * FROM sensor_data ORDER BY timestamp DESC LIMIT 5;"
 
 echo "🌐 Probando endpoint API..."

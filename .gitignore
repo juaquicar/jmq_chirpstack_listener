@@ -1,0 +1,53 @@
+# Archivos y carpetas de Docker
+*.log
+*.pid
+*.seed
+*.bak
+*.swp
+
+# Archivos de configuración temporal
+.env
+.env.*
+!.env.example
+
+# Archivos de Docker específicos
+docker-compose.override.yml
+docker-compose.dev.yml
+docker-compose.local.yml
+
+# Volúmenes y otros directorios montados
+volumes/
+data/
+tmp/
+var/
+cache/
+
+# Imágenes construidas localmente
+*.tar
+
+# Ignorar el contenido generado en la carpeta de build
+build/
+dist/
+
+# Node (si usas Node.js dentro de Docker)
+node_modules/
+
+# Python (si usas Python dentro de Docker)
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+venv/
+.env/
+
+# Otros sistemas de entorno virtual o dependencias
+.venv/
+pip-log.txt
+pip-delete-this-directory.txt
+
+# IDEs y editores
+.vscode/
+.idea/
+.DS_Store
+*.sublime-workspace
+*.sublime-project

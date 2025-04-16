@@ -242,7 +242,7 @@ def get_multi_sensor_aggregated(
 
 
 @app.get("/data/")
-def read_sensor_data(limit: int = 10, db: Session = Depends(get_db)):
+def read_sensor_data(limit: int = 100, db: Session = Depends(get_db)):
     return db.query(models.SensorData).order_by(models.SensorData.timestamp.desc()).limit(limit).all()
 
 
