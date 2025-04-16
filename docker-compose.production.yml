@@ -1,0 +1,37 @@
+services:
+  mosquitto:
+    image: eclipse-mosquitto:2.0
+    container_name: mosquitto
+    ports:
+      - "1884:1883"
+    volumes:
+      - ./mosquitto/config:/mosquitto/config
+      - ./mosquitto/data:/mosquitto/data
+      - ./mosquitto/log:/mosquitto/log
+    restart: always
+
+  listener_app:
+    container_name: chirpstack_listener_app
+    build:
+      context: .
+    restart: always
+    ports:
+      - "8999:8999"
+    env_file:
+      - .env.production
+    volumes:
+      - ./logs:/var/log
+    depends_on:
+      - timescaledb
+
+  timescaledb:
+    container_name: chirpstack_timescaledb
+    image: timescale/timescaledb:latest-pg14
+    restart: always
+    env_file:
+      - .env.production
+    volumes:
+      - timescale_data:/var/lib/postgresql/data
+
+volumes:
+  timescale_data:

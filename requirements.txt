@@ -1,0 +1,11 @@
+fastapi
+uvicorn[standard]
+paho-mqtt
+sqlalchemy
+asyncpg
+databases
+python-dotenv
+psycopg2-binary
+python-jose
+asyncpg
+gunicorn
