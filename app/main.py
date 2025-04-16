@@ -249,13 +249,18 @@ def read_sensor_data(limit: int = 100, db: Session = Depends(get_db)):
 
 import threading
 from app import mqtt_client
+import os
 
 def start_mqtt():
+
+    broker_host = os.getenv("MQTT_BROKER", "localhost")
+    broker_port = int(os.getenv("MQTT_PORT", 1884))
+
     client = mqtt_client.mqtt.Client()
     client.on_connect = mqtt_client.on_connect
     client.on_disconnect = mqtt_client.on_disconnect
     client.on_message = mqtt_client.on_message
-    client.connect("mosquitto", 1883, 60)
+    client.connect(broker_host, broker_port, 60)
     client.loop_forever()
 
 mqtt_thread = threading.Thread(target=start_mqtt)

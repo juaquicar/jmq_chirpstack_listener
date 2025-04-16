@@ -61,9 +61,37 @@ sudo docker compose up -d
 
 5. **Limpieza**  
    Para limpiar contenedores, volúmenes y redes:
-   ```bash
+
+```bash
 sudo bash -c 'docker stop $(docker ps -a -q)'
 sudo bash -c 'sudo docker rm $(docker ps -aq)'
 sudo docker volume prune -f
 sudo docker network prune -f
    ```
+
+
+6. **Ejecutar Entorno de Dev**
+
+Asegúrate de tener la base de datos y mosquitto corriendo:
+
+```bash
+sudo docker compose down 
+sudo docker compose -f docker-compose.yml up --build
+```
+
+ó 
+
+```bash
+docker compose up -d timescaledb
+docker compose up -d mosquitto
+```
+
+
+Ejecutas Servidor Local:
+
+```bash
+source venv/bin/activate
+pip install -r requirements.txt
+bash entrypoint-dev.sh
+```
+

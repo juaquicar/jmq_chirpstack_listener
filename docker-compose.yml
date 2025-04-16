@@ -2,6 +2,8 @@ services:
   mosquitto:
     image: eclipse-mosquitto:2.0
     container_name: mosquitto
+    env_file:
+      - .env.dev
     ports:
       - "1884:1883"
     volumes:
@@ -10,25 +12,11 @@ services:
       - ./mosquitto/log:/mosquitto/log
     restart: always
 
-  app:
-    build: .
-    container_name: chirpstack_listener_app
-    depends_on:
-      - timescaledb
-      - mosquitto
-    ports:
-      - "8999:8999"
-    environment:
-      - DATABASE_URL=postgresql://sensoruser:sensorpass@timescaledb/sensordata
-      - MQTT_BROKER=mosquitto
-
   timescaledb:
     image: timescale/timescaledb:latest-pg15
     container_name: chirpstack_timescaledb
-    environment:
-      POSTGRES_USER: sensoruser
-      POSTGRES_PASSWORD: sensorpass
-      POSTGRES_DB: sensordata
+    env_file:
+      - .env.dev
     ports:
       - "55432:5432"
     volumes:

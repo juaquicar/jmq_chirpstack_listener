@@ -41,9 +41,9 @@ Definir en `.env.production`:
 ENV=production
 
 # Base de datos
-POSTGRES_DB=
-POSTGRES_USER=
-POSTGRES_PASSWORD=
+DB_NAME=
+DB_USER=
+DB_PASS=
 
 # MQTT
 MQTT_BROKER=
