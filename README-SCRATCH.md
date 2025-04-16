@@ -65,7 +65,7 @@ tree . -L 2
 ## 📡 Enviar un Mensaje de Prueba vía MQTT
 
 ```bash
-mosquitto_pub -h localhost -p 1883 -t "application/1/device/abcd1234/event/up" -m '{
+mosquitto_pub -h localhost -p 1884 -t "application/1/device/abcd1234/event/up" -m '{
   "devEUI": "abcd1234",
   "receivedAt": "2025-04-16T03:37:00.000Z",
   "objectJSON": {

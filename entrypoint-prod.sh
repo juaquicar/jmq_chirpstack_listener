@@ -16,6 +16,9 @@ if [ -z "$WORKERS" ]; then
   exit 1
 fi
 
+echo "Esperando 15s a que la BD arranque..."
+sleep 15
+
 gunicorn "$APP_MODULE" --workers "$WORKERS" --worker-class uvicorn.workers.UvicornWorker \
   --bind "$HOST:$PORT" --log-level debug --access-logfile "$API_LOG" --error-logfile "$API_LOG" || true
 

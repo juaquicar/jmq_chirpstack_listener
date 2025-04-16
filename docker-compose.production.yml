@@ -30,6 +30,15 @@ services:
     restart: always
     env_file:
       - .env.production
+    environment:
+      POSTGRES_DB: sensordata
+      POSTGRES_USER: sensoruser
+      POSTGRES_PASSWORD: sensorpass
+    healthcheck:
+      test: [ "CMD", "pg_isready", "-U", "sensoruser", "-d", "sensordata" ]
+      interval: 5s
+      timeout: 5s
+      retries: 10
     volumes:
       - timescale_data:/var/lib/postgresql/data
 

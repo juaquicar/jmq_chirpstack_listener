@@ -46,7 +46,7 @@ def run():
     client.on_message = on_message
 
     broker_host = os.getenv("MQTT_BROKER", "localhost")
-    broker_port = int(os.getenv("MQTT_PORT", 1883))
+    broker_port = int(os.getenv("MQTT_PORT", 1884))
     print(f"🌐 Conectando a broker MQTT en {broker_host}:{broker_port}")
 
     rc = client.connect(broker_host, broker_port, 60)

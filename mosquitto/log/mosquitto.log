@@ -511,3 +511,348 @@
 1744813163: New connection from 172.18.0.1:59058 on port 1883.
 1744813163: New client connected from 172.18.0.1:59058 as auto-D9A20EFF-94ED-B6F1-F0CF-5E2807539809 (p2, c1, k60).
 1744813163: Client auto-D9A20EFF-94ED-B6F1-F0CF-5E2807539809 disconnected.
+1744813279: mosquitto version 2.0.21 terminating
+1744813279: Saving in-memory database to mosquitto.db.
+1744813279: Error saving in-memory database, unable to open mosquitto.db.new for writing.
+1744813279: Error: Permission denied.
+1744813324: mosquitto version 2.0.21 starting
+1744813324: Config loaded from /mosquitto/config/mosquitto.conf.
+1744813324: Opening ipv4 listen socket on port 1883.
+1744813324: Opening ipv6 listen socket on port 1883.
+1744813324: mosquitto version 2.0.21 running
+1744813342: New connection from 172.18.0.1:46896 on port 1883.
+1744813342: New client connected from 172.18.0.1:46896 as auto-10A823C2-1E98-C307-052F-D152637C0FFC (p2, c1, k60).
+1744813342: Client auto-10A823C2-1E98-C307-052F-D152637C0FFC disconnected.
+1744813483: New connection from 172.18.0.1:57516 on port 1883.
+1744813483: New client connected from 172.18.0.1:57516 as auto-2F5D05E6-FC5B-4529-D847-09CB43282BEE (p2, c1, k60).
+1744813483: Client auto-2F5D05E6-FC5B-4529-D847-09CB43282BEE disconnected.
+1744813496: New connection from 172.18.0.1:54602 on port 1883.
+1744813496: New client connected from 172.18.0.1:54602 as auto-1DEF688C-7092-D8BC-1F03-356023B4EDCE (p2, c1, k60).
+1744813496: Client auto-1DEF688C-7092-D8BC-1F03-356023B4EDCE disconnected.
+1744813652: mosquitto version 2.0.21 terminating
+1744813652: Saving in-memory database to mosquitto.db.
+1744813652: Error saving in-memory database, unable to open mosquitto.db.new for writing.
+1744813652: Error: Permission denied.
+1744813699: mosquitto version 2.0.21 starting
+1744813699: Config loaded from /mosquitto/config/mosquitto.conf.
+1744813699: Opening ipv4 listen socket on port 1883.
+1744813699: Opening ipv6 listen socket on port 1883.
+1744813699: mosquitto version 2.0.21 running
+1744813717: New connection from 172.18.0.1:49426 on port 1883.
+1744813717: New client connected from 172.18.0.1:49426 as auto-851CC0E5-0D01-5D56-A559-33AF1B3A1E26 (p2, c1, k60).
+1744813717: Client auto-851CC0E5-0D01-5D56-A559-33AF1B3A1E26 disconnected.
+1744813869: mosquitto version 2.0.21 terminating
+1744813869: Saving in-memory database to mosquitto.db.
+1744813869: Error saving in-memory database, unable to open mosquitto.db.new for writing.
+1744813869: Error: Permission denied.
+1744813913: mosquitto version 2.0.21 starting
+1744813913: Config loaded from /mosquitto/config/mosquitto.conf.
+1744813913: Opening ipv4 listen socket on port 1883.
+1744813913: Opening ipv6 listen socket on port 1883.
+1744813913: mosquitto version 2.0.21 running
+1744813917: New connection from 172.18.0.1:37662 on port 1883.
+1744813917: New client connected from 172.18.0.1:37662 as auto-623EFC56-767C-B306-206C-752641C8703F (p2, c1, k60).
+1744813917: Client auto-623EFC56-767C-B306-206C-752641C8703F disconnected.
+1744813980: mosquitto version 2.0.21 terminating
+1744813980: Saving in-memory database to mosquitto.db.
+1744813980: Error saving in-memory database, unable to open mosquitto.db.new for writing.
+1744813980: Error: Permission denied.
+1744813981: mosquitto version 2.0.21 starting
+1744813981: Config loaded from /mosquitto/config/mosquitto.conf.
+1744813981: Opening ipv4 listen socket on port 1883.
+1744813981: Opening ipv6 listen socket on port 1883.
+1744813981: mosquitto version 2.0.21 running
+1744813989: mosquitto version 2.0.21 terminating
+1744813989: Saving in-memory database to mosquitto.db.
+1744813989: Error saving in-memory database, unable to open mosquitto.db.new for writing.
+1744813989: Error: Permission denied.
+1744814040: mosquitto version 2.0.21 starting
+1744814040: Config loaded from /mosquitto/config/mosquitto.conf.
+1744814040: Opening ipv4 listen socket on port 1883.
+1744814040: Opening ipv6 listen socket on port 1883.
+1744814040: mosquitto version 2.0.21 running
+1744814046: New connection from 172.18.0.1:47304 on port 1883.
+1744814046: New client connected from 172.18.0.1:47304 as auto-1709FDB9-25E9-846D-7857-8868BDAC430C (p2, c1, k60).
+1744814046: Client auto-1709FDB9-25E9-846D-7857-8868BDAC430C disconnected.
+1744814326: mosquitto version 2.0.21 terminating
+1744814326: Saving in-memory database to mosquitto.db.
+1744814326: Error saving in-memory database, unable to open mosquitto.db.new for writing.
+1744814326: Error: Permission denied.
+1744814370: mosquitto version 2.0.21 starting
+1744814370: Config loaded from /mosquitto/config/mosquitto.conf.
+1744814370: Opening ipv4 listen socket on port 1883.
+1744814370: Opening ipv6 listen socket on port 1883.
+1744814370: mosquitto version 2.0.21 running
+1744814375: New connection from 172.18.0.1:38534 on port 1883.
+1744814375: New client connected from 172.18.0.1:38534 as auto-82ADF96C-2602-BC31-4745-55121CA5D6A8 (p2, c1, k60).
+1744814375: Client auto-82ADF96C-2602-BC31-4745-55121CA5D6A8 disconnected.
+1744814535: mosquitto version 2.0.21 terminating
+1744814535: Saving in-memory database to mosquitto.db.
+1744814535: Error saving in-memory database, unable to open mosquitto.db.new for writing.
+1744814535: Error: Permission denied.
+1744814579: mosquitto version 2.0.21 starting
+1744814579: Config loaded from /mosquitto/config/mosquitto.conf.
+1744814579: Opening ipv4 listen socket on port 1883.
+1744814579: Opening ipv6 listen socket on port 1883.
+1744814579: mosquitto version 2.0.21 running
+1744814582: New connection from 172.18.0.1:41236 on port 1883.
+1744814582: New client connected from 172.18.0.1:41236 as auto-AE6ED223-8638-DE2F-50EC-33D538AF435F (p2, c1, k60).
+1744814582: Client auto-AE6ED223-8638-DE2F-50EC-33D538AF435F disconnected.
+1744814668: mosquitto version 2.0.21 terminating
+1744814668: Saving in-memory database to mosquitto.db.
+1744814668: Error saving in-memory database, unable to open mosquitto.db.new for writing.
+1744814668: Error: Permission denied.
+1744814719: mosquitto version 2.0.21 starting
+1744814719: Config loaded from /mosquitto/config/mosquitto.conf.
+1744814719: Opening ipv4 listen socket on port 1883.
+1744814719: Opening ipv6 listen socket on port 1883.
+1744814719: mosquitto version 2.0.21 running
+1744814727: New connection from 172.18.0.1:41546 on port 1883.
+1744814727: New client connected from 172.18.0.1:41546 as auto-42D33C7C-E0D7-5CAC-0695-1DEC4D2E9BEF (p2, c1, k60).
+1744814727: Client auto-42D33C7C-E0D7-5CAC-0695-1DEC4D2E9BEF disconnected.
+1744814981: mosquitto version 2.0.21 terminating
+1744814981: Saving in-memory database to mosquitto.db.
+1744814981: Error saving in-memory database, unable to open mosquitto.db.new for writing.
+1744814981: Error: Permission denied.
+1744815049: mosquitto version 2.0.21 starting
+1744815049: Config loaded from /mosquitto/config/mosquitto.conf.
+1744815049: Opening ipv4 listen socket on port 1883.
+1744815049: Opening ipv6 listen socket on port 1883.
+1744815049: mosquitto version 2.0.21 running
+1744815053: New connection from 172.18.0.1:50788 on port 1883.
+1744815053: New client connected from 172.18.0.1:50788 as auto-5BDFE3C9-49FF-B515-0FBD-F44C5006552A (p2, c1, k60).
+1744815053: Client auto-5BDFE3C9-49FF-B515-0FBD-F44C5006552A disconnected.
+1744815070: mosquitto version 2.0.21 terminating
+1744815070: Saving in-memory database to mosquitto.db.
+1744815070: Error saving in-memory database, unable to open mosquitto.db.new for writing.
+1744815070: Error: Permission denied.
+1744815152: mosquitto version 2.0.21 starting
+1744815152: Config loaded from /mosquitto/config/mosquitto.conf.
+1744815152: Opening ipv4 listen socket on port 1883.
+1744815152: Opening ipv6 listen socket on port 1883.
+1744815152: mosquitto version 2.0.21 running
+1744815165: mosquitto version 2.0.21 terminating
+1744815165: Saving in-memory database to mosquitto.db.
+1744815165: Error saving in-memory database, unable to open mosquitto.db.new for writing.
+1744815165: Error: Permission denied.
+1744815213: mosquitto version 2.0.21 starting
+1744815213: Config loaded from /mosquitto/config/mosquitto.conf.
+1744815213: Opening ipv4 listen socket on port 1883.
+1744815213: Opening ipv6 listen socket on port 1883.
+1744815213: mosquitto version 2.0.21 running
+1744815227: New connection from 172.18.0.1:39610 on port 1883.
+1744815227: New client connected from 172.18.0.1:39610 as auto-1455527A-4469-6382-DB48-534904625365 (p2, c1, k60).
+1744815227: Client auto-1455527A-4469-6382-DB48-534904625365 disconnected.
+1744815326: mosquitto version 2.0.21 terminating
+1744815326: Saving in-memory database to mosquitto.db.
+1744815326: Error saving in-memory database, unable to open mosquitto.db.new for writing.
+1744815326: Error: Permission denied.
+1744815375: mosquitto version 2.0.21 starting
+1744815375: Config loaded from /mosquitto/config/mosquitto.conf.
+1744815375: Opening ipv4 listen socket on port 1883.
+1744815375: Opening ipv6 listen socket on port 1883.
+1744815375: mosquitto version 2.0.21 running
+1744815403: New connection from 172.18.0.1:40306 on port 1883.
+1744815403: New client connected from 172.18.0.1:40306 as auto-193B8C7C-7FDC-B2C8-A177-74A865D7085D (p2, c1, k60).
+1744815403: Client auto-193B8C7C-7FDC-B2C8-A177-74A865D7085D disconnected.
+1744815409: New connection from 172.18.0.1:45870 on port 1883.
+1744815409: New client connected from 172.18.0.1:45870 as auto-985E0563-1880-0077-2D67-BC799FEF6C60 (p2, c1, k60).
+1744815409: Client auto-985E0563-1880-0077-2D67-BC799FEF6C60 disconnected.
+1744815477: mosquitto version 2.0.21 terminating
+1744815477: Saving in-memory database to mosquitto.db.
+1744815477: Error saving in-memory database, unable to open mosquitto.db.new for writing.
+1744815477: Error: Permission denied.
+1744815527: mosquitto version 2.0.21 starting
+1744815527: Config loaded from /mosquitto/config/mosquitto.conf.
+1744815527: Opening ipv4 listen socket on port 1883.
+1744815527: Opening ipv6 listen socket on port 1883.
+1744815527: mosquitto version 2.0.21 running
+1744815533: New connection from 172.18.0.1:55286 on port 1883.
+1744815533: New client connected from 172.18.0.1:55286 as auto-D2E08310-609F-FD96-8033-1E9D75C1DD09 (p2, c1, k60).
+1744815533: Client auto-D2E08310-609F-FD96-8033-1E9D75C1DD09 disconnected.
+1744815536: New connection from 172.18.0.1:55290 on port 1883.
+1744815536: New client connected from 172.18.0.1:55290 as auto-65CA3C07-61DA-8701-2078-62677E9ABE7E (p2, c1, k60).
+1744815536: Client auto-65CA3C07-61DA-8701-2078-62677E9ABE7E disconnected.
+1744815624: mosquitto version 2.0.21 terminating
+1744815624: Saving in-memory database to mosquitto.db.
+1744815624: Error saving in-memory database, unable to open mosquitto.db.new for writing.
+1744815624: Error: Permission denied.
+1744815673: mosquitto version 2.0.21 starting
+1744815673: Config loaded from /mosquitto/config/mosquitto.conf.
+1744815673: Opening ipv4 listen socket on port 1883.
+1744815673: Opening ipv6 listen socket on port 1883.
+1744815673: mosquitto version 2.0.21 running
+1744815677: New connection from 172.18.0.1:46724 on port 1883.
+1744815677: New client connected from 172.18.0.1:46724 as auto-2FB13132-A201-4EFA-4524-BDABABB3BFCD (p2, c1, k60).
+1744815677: Client auto-2FB13132-A201-4EFA-4524-BDABABB3BFCD disconnected.
+1744815681: New connection from 172.18.0.1:60240 on port 1883.
+1744815681: New client connected from 172.18.0.1:60240 as auto-6C931049-F334-B397-7F71-1C9FB657545D (p2, c1, k60).
+1744815681: Client auto-6C931049-F334-B397-7F71-1C9FB657545D disconnected.
+1744817474: Saving in-memory database to mosquitto.db.
+1744817474: Error saving in-memory database, unable to open mosquitto.db.new for writing.
+1744817474: Error: Permission denied.
+1744817708: New connection from 172.18.0.1:36052 on port 1883.
+1744817708: New client connected from 172.18.0.1:36052 as auto-A9C47DE7-457F-F864-D344-506BCAAF411B (p2, c1, k60).
+1744817708: Client auto-A9C47DE7-457F-F864-D344-506BCAAF411B disconnected.
+1744817729: New connection from 172.18.0.1:39064 on port 1883.
+1744817729: New client connected from 172.18.0.1:39064 as auto-9A4A03A0-F705-45A7-17A0-BD6234AB89F1 (p2, c1, k60).
+1744817729: Client auto-9A4A03A0-F705-45A7-17A0-BD6234AB89F1 disconnected.
+1744817924: New connection from 172.18.0.1:33858 on port 1883.
+1744817924: New client connected from 172.18.0.1:33858 as auto-05206972-C9A6-179A-6308-428F3C4710D3 (p2, c1, k60).
+1744817924: Client auto-05206972-C9A6-179A-6308-428F3C4710D3 disconnected.
+1744818016: New connection from 172.18.0.1:49936 on port 1883.
+1744818016: New client connected from 172.18.0.1:49936 as auto-26E78930-22C7-93F5-DACF-BB96FE8BEFFD (p2, c1, k60).
+1744818016: Client auto-26E78930-22C7-93F5-DACF-BB96FE8BEFFD disconnected.
+1744818032: New connection from 172.18.0.1:50106 on port 1883.
+1744818032: New client connected from 172.18.0.1:50106 as auto-E42A683A-6515-0A0E-2123-E0FDC914FDE4 (p2, c1, k60).
+1744818032: Client auto-E42A683A-6515-0A0E-2123-E0FDC914FDE4 disconnected.
+1744818073: mosquitto version 2.0.21 terminating
+1744818073: Saving in-memory database to mosquitto.db.
+1744818073: Error saving in-memory database, unable to open mosquitto.db.new for writing.
+1744818073: Error: Permission denied.
+1744818118: mosquitto version 2.0.21 starting
+1744818118: Config loaded from /mosquitto/config/mosquitto.conf.
+1744818118: Opening ipv4 listen socket on port 1883.
+1744818118: Opening ipv6 listen socket on port 1883.
+1744818118: mosquitto version 2.0.21 running
+1744818156: New connection from 172.18.0.1:54812 on port 1883.
+1744818156: New client connected from 172.18.0.1:54812 as auto-3BF5CBB0-FA1F-62C8-8EDA-698405C2982B (p2, c1, k60).
+1744818156: Client auto-3BF5CBB0-FA1F-62C8-8EDA-698405C2982B disconnected.
+1744818160: New connection from 172.18.0.1:46534 on port 1883.
+1744818160: New client connected from 172.18.0.1:46534 as auto-0B812F0F-9A5D-5869-37F4-C9C86D9F89BB (p2, c1, k60).
+1744818160: Client auto-0B812F0F-9A5D-5869-37F4-C9C86D9F89BB disconnected.
+1744818217: New connection from 172.18.0.1:45396 on port 1883.
+1744818217: New client connected from 172.18.0.1:45396 as auto-8A7C11A0-F84D-313E-C01F-AB8ACF1FAEEC (p2, c1, k60).
+1744818217: Client auto-8A7C11A0-F84D-313E-C01F-AB8ACF1FAEEC disconnected.
+1744818297: New connection from 172.18.0.1:52516 on port 1883.
+1744818297: New client connected from 172.18.0.1:52516 as auto-1D681ADC-F576-D108-66DE-1B496C0C34E3 (p2, c1, k60).
+1744818297: Client auto-1D681ADC-F576-D108-66DE-1B496C0C34E3 disconnected.
+1744818300: New connection from 172.18.0.1:51174 on port 1883.
+1744818300: New client connected from 172.18.0.1:51174 as auto-E12DFC23-C72F-D1DD-6162-DE44C7DAA0AE (p2, c1, k60).
+1744818300: Client auto-E12DFC23-C72F-D1DD-6162-DE44C7DAA0AE disconnected.
+1744818430: mosquitto version 2.0.21 terminating
+1744818430: Saving in-memory database to mosquitto.db.
+1744818430: Error saving in-memory database, unable to open mosquitto.db.new for writing.
+1744818430: Error: Permission denied.
+1744818475: mosquitto version 2.0.21 starting
+1744818475: Config loaded from /mosquitto/config/mosquitto.conf.
+1744818475: Opening ipv4 listen socket on port 1883.
+1744818475: Opening ipv6 listen socket on port 1883.
+1744818475: mosquitto version 2.0.21 running
+1744818592: mosquitto version 2.0.21 terminating
+1744818592: Saving in-memory database to mosquitto.db.
+1744818592: Error saving in-memory database, unable to open mosquitto.db.new for writing.
+1744818592: Error: Permission denied.
+1744818636: mosquitto version 2.0.21 starting
+1744818636: Config loaded from /mosquitto/config/mosquitto.conf.
+1744818636: Opening ipv4 listen socket on port 1883.
+1744818636: Opening ipv6 listen socket on port 1883.
+1744818636: mosquitto version 2.0.21 running
+1744818644: New connection from 172.18.0.1:43726 on port 1883.
+1744818644: New client connected from 172.18.0.1:43726 as auto-FCDF7AF6-0BF3-DB84-90A6-2F2A39C07CD6 (p2, c1, k60).
+1744818644: Client auto-FCDF7AF6-0BF3-DB84-90A6-2F2A39C07CD6 disconnected.
+1744818649: New connection from 172.18.0.1:43738 on port 1883.
+1744818649: New client connected from 172.18.0.1:43738 as auto-63051AD5-A65D-3342-4582-4781898FF840 (p2, c1, k60).
+1744818649: Client auto-63051AD5-A65D-3342-4582-4781898FF840 disconnected.
+1744818975: mosquitto version 2.0.21 terminating
+1744818975: Saving in-memory database to mosquitto.db.
+1744818975: Error saving in-memory database, unable to open mosquitto.db.new for writing.
+1744818975: Error: Permission denied.
+1744819019: mosquitto version 2.0.21 starting
+1744819019: Config loaded from /mosquitto/config/mosquitto.conf.
+1744819019: Opening ipv4 listen socket on port 1883.
+1744819019: Opening ipv6 listen socket on port 1883.
+1744819019: mosquitto version 2.0.21 running
+1744819032: New connection from 172.18.0.1:33820 on port 1883.
+1744819032: New client connected from 172.18.0.1:33820 as auto-9EABB25F-6038-C90F-C34E-B36EB4630FD0 (p2, c1, k60).
+1744819032: Client auto-9EABB25F-6038-C90F-C34E-B36EB4630FD0 disconnected.
+1744819038: New connection from 172.18.0.1:33822 on port 1883.
+1744819038: New client connected from 172.18.0.1:33822 as auto-7867E22B-DC1A-9BD3-C548-1CD97B9FA5CE (p2, c1, k60).
+1744819038: Client auto-7867E22B-DC1A-9BD3-C548-1CD97B9FA5CE disconnected.
+1744819207: mosquitto version 2.0.21 terminating
+1744819207: Saving in-memory database to mosquitto.db.
+1744819207: Error saving in-memory database, unable to open mosquitto.db.new for writing.
+1744819207: Error: Permission denied.
+1744819252: mosquitto version 2.0.21 starting
+1744819252: Config loaded from /mosquitto/config/mosquitto.conf.
+1744819252: Opening ipv4 listen socket on port 1883.
+1744819252: Opening ipv6 listen socket on port 1883.
+1744819252: mosquitto version 2.0.21 running
+1744819258: New connection from 172.18.0.1:33594 on port 1883.
+1744819258: New client connected from 172.18.0.1:33594 as auto-09D3BB42-8878-689D-DA01-1EB84C1700E2 (p2, c1, k60).
+1744819258: Client auto-09D3BB42-8878-689D-DA01-1EB84C1700E2 disconnected.
+1744819262: New connection from 172.18.0.1:50194 on port 1883.
+1744819262: New client connected from 172.18.0.1:50194 as auto-4A0DF494-FBE3-FFA5-54F0-6F52D7335AEE (p2, c1, k60).
+1744819262: Client auto-4A0DF494-FBE3-FFA5-54F0-6F52D7335AEE disconnected.
+1744819268: New connection from 172.18.0.4:57165 on port 1883.
+1744819268: New client connected from 172.18.0.4:57165 as auto-C047C278-CD0E-50EE-ECE6-0943B929F047 (p2, c1, k60).
+1744819268: New connection from 172.18.0.4:35555 on port 1883.
+1744819268: New client connected from 172.18.0.4:35555 as auto-ABF62B01-1CFD-8815-8E4C-6D4B4998E110 (p2, c1, k60).
+1744819314: mosquitto version 2.0.21 terminating
+1744819314: Saving in-memory database to mosquitto.db.
+1744819314: Error saving in-memory database, unable to open mosquitto.db.new for writing.
+1744819314: Error: Permission denied.
+1744819358: mosquitto version 2.0.21 starting
+1744819358: Config loaded from /mosquitto/config/mosquitto.conf.
+1744819358: Opening ipv4 listen socket on port 1883.
+1744819358: Opening ipv6 listen socket on port 1883.
+1744819358: mosquitto version 2.0.21 running
+1744819359: New connection from 172.18.0.1:46594 on port 1883.
+1744819359: New client connected from 172.18.0.1:46594 as auto-2411C8A6-AED8-D757-4593-87132B08FFB8 (p2, c1, k60).
+1744819362: New connection from 172.18.0.1:46602 on port 1883.
+1744819362: New client connected from 172.18.0.1:46602 as auto-7BD61622-EE0F-7E6B-97C1-45976C9E4D03 (p2, c1, k60).
+1744819362: Client auto-7BD61622-EE0F-7E6B-97C1-45976C9E4D03 disconnected.
+1744819367: New connection from 172.18.0.1:46608 on port 1883.
+1744819367: New client connected from 172.18.0.1:46608 as auto-A1FAB1CE-BC7A-3256-F84B-85E78C972D75 (p2, c1, k60).
+1744819367: Client auto-A1FAB1CE-BC7A-3256-F84B-85E78C972D75 disconnected.
+1744819374: New connection from 172.18.0.4:39355 on port 1883.
+1744819374: New connection from 172.18.0.4:53529 on port 1883.
+1744819374: New client connected from 172.18.0.4:39355 as auto-72F714A0-3F3F-F30E-C7DB-D31E6BA3746D (p2, c1, k60).
+1744819374: New client connected from 172.18.0.4:53529 as auto-D2AE98A2-4515-B527-AC44-15508D57433F (p2, c1, k60).
+1744819473: New connection from 172.18.0.1:57906 on port 1883.
+1744819473: New client connected from 172.18.0.1:57906 as auto-F3A7B0C0-28D1-8270-0021-564A380A0474 (p2, c1, k60).
+1744819473: Client auto-F3A7B0C0-28D1-8270-0021-564A380A0474 disconnected.
+1744819489: New connection from 172.18.0.1:59870 on port 1883.
+1744819489: New client connected from 172.18.0.1:59870 as auto-B59FFB7A-B792-025F-3CC6-4BB69E01FF1F (p2, c1, k60).
+1744819489: Client auto-B59FFB7A-B792-025F-3CC6-4BB69E01FF1F disconnected.
+1744819503: mosquitto version 2.0.21 terminating
+1744819503: Saving in-memory database to mosquitto.db.
+1744819503: Error saving in-memory database, unable to open mosquitto.db.new for writing.
+1744819503: Error: Permission denied.
+1744819547: mosquitto version 2.0.21 starting
+1744819547: Config loaded from /mosquitto/config/mosquitto.conf.
+1744819547: Opening ipv4 listen socket on port 1883.
+1744819547: Opening ipv6 listen socket on port 1883.
+1744819547: mosquitto version 2.0.21 running
+1744819563: New connection from 172.18.0.4:41329 on port 1883.
+1744819563: New connection from 172.18.0.4:33259 on port 1883.
+1744819563: New client connected from 172.18.0.4:33259 as auto-1D75FF54-9DA4-C634-0E63-F94CCAC5B870 (p2, c1, k60).
+1744819563: New client connected from 172.18.0.4:41329 as auto-997E82E4-8835-07FD-FF2D-BFC3B48F32E5 (p2, c1, k60).
+1744819627: New connection from 172.18.0.1:55558 on port 1883.
+1744819627: New client connected from 172.18.0.1:55558 as auto-EE318460-C437-1BC1-4935-CDFD5EE586DD (p2, c1, k60).
+1744819627: Client auto-EE318460-C437-1BC1-4935-CDFD5EE586DD disconnected.
+1744819631: New connection from 172.18.0.1:57352 on port 1883.
+1744819631: New client connected from 172.18.0.1:57352 as auto-7F3EC039-A9E0-F6EE-055F-7664E9CED7CF (p2, c1, k60).
+1744819631: Client auto-7F3EC039-A9E0-F6EE-055F-7664E9CED7CF disconnected.
+1744819643: New connection from 172.18.0.1:54636 on port 1883.
+1744819643: New client connected from 172.18.0.1:54636 as auto-93BC8574-3394-F578-3736-B2B8EF80FAE3 (p2, c1, k60).
+1744819643: Client auto-93BC8574-3394-F578-3736-B2B8EF80FAE3 disconnected.
+1744819660: mosquitto version 2.0.21 terminating
+1744819660: Saving in-memory database to mosquitto.db.
+1744819660: Error saving in-memory database, unable to open mosquitto.db.new for writing.
+1744819660: Error: Permission denied.
+1744819705: mosquitto version 2.0.21 starting
+1744819705: Config loaded from /mosquitto/config/mosquitto.conf.
+1744819705: Opening ipv4 listen socket on port 1883.
+1744819705: Opening ipv6 listen socket on port 1883.
+1744819705: mosquitto version 2.0.21 running
+1744819717: New connection from 172.18.0.1:46078 on port 1883.
+1744819717: New client connected from 172.18.0.1:46078 as auto-744D076B-E2F9-D031-3017-0281EAE2BD76 (p2, c1, k60).
+1744819717: Client auto-744D076B-E2F9-D031-3017-0281EAE2BD76 disconnected.
+1744819721: New connection from 172.18.0.4:44001 on port 1883.
+1744819721: New client connected from 172.18.0.4:44001 as auto-9388F398-9D31-3AAD-2451-AD05B0CDD26E (p2, c1, k60).
+1744819721: New connection from 172.18.0.4:60423 on port 1883.
+1744819721: New client connected from 172.18.0.4:60423 as auto-799A0BA7-7EFB-729D-0716-502DEEDC367C (p2, c1, k60).
+1744819726: New connection from 172.18.0.1:54030 on port 1883.
+1744819726: New client connected from 172.18.0.1:54030 as auto-813F0CAF-4E09-89E3-06A4-EE84F81A76C9 (p2, c1, k60).
+1744819726: Client auto-813F0CAF-4E09-89E3-06A4-EE84F81A76C9 disconnected.
