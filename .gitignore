@@ -21,6 +21,8 @@ data/
 tmp/
 var/
 cache/
+log/
+mosquitto/log/
 
 # Imágenes construidas localmente
 *.tar
