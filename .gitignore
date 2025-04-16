@@ -5,10 +5,7 @@
 *.bak
 *.swp
 
-# Archivos de configuración temporal
-.env
-.env.*
-!.env.example
+
 
 # Archivos de Docker específicos
 docker-compose.override.yml
