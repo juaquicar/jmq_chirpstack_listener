@@ -2,6 +2,7 @@
 
 Este documento describe el flujo de trabajo para desarrollar en el entorno de jmq_chirpstack_listener.
 
+
 ## Índice
 - [Inicio Rápido](#inicio-rápido)
 - [Flujo de Trabajo](#flujo-de-trabajo)
@@ -12,22 +13,16 @@ Este documento describe el flujo de trabajo para desarrollar en el entorno de jm
 
 Para levantar el entorno de desarrollo:
 
-```bash
-sudo docker compose down --volumes
-sudo docker compose build --no-cache
-sudo docker compose up
-```
-
-O levantarlo en segundo plano:
+**Primero hay que levantar el docker de mosquitto y de timescaleDB y luego el servicio mqtt en desarrollo para ver.**
 
 ```bash
-sudo docker compose up -d
+bash deploy.dev.sh
 ```
 
 ## Flujo de Trabajo de Desarrollo
 
 1. **Levantar el entorno**  
-   Usa los comandos anteriores para asegurarte de tener un entorno limpio.
+   Usa los comandos anteriores para asegurarte de tener un entorno limpio. 
 
 2. **Desarrollar nuevas funcionalidades**  
    Modifica el código según tus necesidades. Si modificas dependencias o el `entrypoint`, recuerda reconstruir la imagen usando `--no-cache`.
@@ -76,7 +71,7 @@ Asegúrate de tener la base de datos y mosquitto corriendo:
 
 ```bash
 sudo docker compose down 
-sudo docker compose -f docker-compose.yml up --build
+sudo docker compose -f docker-compose.dev.yml up --build
 ```
 
 ó 

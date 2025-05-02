@@ -4,16 +4,17 @@ Este documento describe el procedimiento para desplegar el proyecto en producci�
 
 ## Preparativos
 
+0. Mete los certificados MQTT correspondientes en app/ctx/*
 1. Configura el archivo `.env.production` con las variables de entorno necesarias.
 2. Asegúrate de tener el archivo `docker-compose.production.yml` correcto.
 3. Verifica que el Dockerfile está optimizado para producción.
 
 ## Despliegue
 
-Usa el script `deploy.sh` para automatizar el despliegue:
+Usa el script `deploy.production.sh` para automatizar el despliegue:
 
 ```bash
-  sudo bash deploy.sh
+  sudo bash deploy.production.sh
 ```
 
 ## Verificación y Monitoreo
@@ -34,7 +35,7 @@ Si ocurre algún problema:
   ```bash
   docker compose -f docker-compose.production.yml down
   ```
-- Realiza ajustes y vuelve a desplegar con `deploy.sh`.
+- Realiza ajustes y vuelve a desplegar con `deploy.production.sh`.
 
 
 # Nginx Config

@@ -50,3 +50,6 @@ pip-delete-this-directory.txt
 .DS_Store
 *.sublime-workspace
 *.sublime-project
+
+*.crt
+*.key

@@ -870,3 +870,993 @@
 1744819908: New connection from 172.18.0.1:44086 on port 1883.
 1744819908: New client connected from 172.18.0.1:44086 as auto-B2389551-77D7-D38B-DCFF-C888414B86DA (p2, c1, k60).
 1744819908: Client auto-B2389551-77D7-D38B-DCFF-C888414B86DA disconnected.
+1744820104: Client auto-75E406C1-02E9-BEB0-684D-79C546A96028 closed its connection.
+1744820114: mosquitto version 2.0.21 terminating
+1744820114: Saving in-memory database to mosquitto.db.
+1744820114: Error saving in-memory database, unable to open mosquitto.db.new for writing.
+1744820114: Error: Permission denied.
+1744835450: mosquitto version 2.0.21 starting
+1744835450: Config loaded from /mosquitto/config/mosquitto.conf.
+1744835450: Opening ipv4 listen socket on port 1883.
+1744835450: Opening ipv6 listen socket on port 1883.
+1744835450: mosquitto version 2.0.21 running
+1744877814: Saving in-memory database to mosquitto.db.
+1744877814: Error saving in-memory database, unable to open mosquitto.db.new for writing.
+1744877814: Error: Permission denied.
+1744890959: Saving in-memory database to mosquitto.db.
+1744890959: Error saving in-memory database, unable to open mosquitto.db.new for writing.
+1744890959: Error: Permission denied.
+1744892760: Saving in-memory database to mosquitto.db.
+1744892760: Error saving in-memory database, unable to open mosquitto.db.new for writing.
+1744892760: Error: Permission denied.
+1744894561: Saving in-memory database to mosquitto.db.
+1744894561: Error saving in-memory database, unable to open mosquitto.db.new for writing.
+1744894561: Error: Permission denied.
+1744896119: mosquitto version 2.0.21 terminating
+1744896119: Saving in-memory database to mosquitto.db.
+1744896119: Error saving in-memory database, unable to open mosquitto.db.new for writing.
+1744896119: Error: Permission denied.
+1745079682: mosquitto version 2.0.21 starting
+1745079682: Config loaded from /mosquitto/config/mosquitto.conf.
+1745079682: Opening ipv4 listen socket on port 1883.
+1745079682: Opening ipv6 listen socket on port 1883.
+1745079682: mosquitto version 2.0.21 running
+1745080139: mosquitto version 2.0.21 terminating
+1745080139: Saving in-memory database to mosquitto.db.
+1745080139: Error saving in-memory database, unable to open mosquitto.db.new for writing.
+1745080139: Error: Permission denied.
+1745218535: mosquitto version 2.0.21 starting
+1745218535: Config loaded from /mosquitto/config/mosquitto.conf.
+1745218535: Opening ipv4 listen socket on port 1883.
+1745218535: Opening ipv6 listen socket on port 1883.
+1745218535: mosquitto version 2.0.21 running
+1745219220: mosquitto version 2.0.21 terminating
+1745219220: Saving in-memory database to mosquitto.db.
+1745219220: Error saving in-memory database, unable to open mosquitto.db.new for writing.
+1745219220: Error: Permission denied.
+1745219259: mosquitto version 2.0.21 starting
+1745219259: Config loaded from /mosquitto/config/mosquitto.conf.
+1745219259: Opening ipv4 listen socket on port 1883.
+1745219259: Opening ipv6 listen socket on port 1883.
+1745219259: mosquitto version 2.0.21 running
+1745221060: Saving in-memory database to mosquitto.db.
+1745221060: Error saving in-memory database, unable to open mosquitto.db.new for writing.
+1745221060: Error: Permission denied.
+1745222861: Saving in-memory database to mosquitto.db.
+1745222861: Error saving in-memory database, unable to open mosquitto.db.new for writing.
+1745222861: Error: Permission denied.
+1745224662: Saving in-memory database to mosquitto.db.
+1745224662: Error saving in-memory database, unable to open mosquitto.db.new for writing.
+1745224662: Error: Permission denied.
+1745226463: Saving in-memory database to mosquitto.db.
+1745226463: Error saving in-memory database, unable to open mosquitto.db.new for writing.
+1745226463: Error: Permission denied.
+1745228264: Saving in-memory database to mosquitto.db.
+1745228264: Error saving in-memory database, unable to open mosquitto.db.new for writing.
+1745228264: Error: Permission denied.
+1745230065: Saving in-memory database to mosquitto.db.
+1745230065: Error saving in-memory database, unable to open mosquitto.db.new for writing.
+1745230065: Error: Permission denied.
+1745231866: Saving in-memory database to mosquitto.db.
+1745231866: Error saving in-memory database, unable to open mosquitto.db.new for writing.
+1745231866: Error: Permission denied.
+1745233667: Saving in-memory database to mosquitto.db.
+1745233667: Error saving in-memory database, unable to open mosquitto.db.new for writing.
+1745233667: Error: Permission denied.
+1745235468: Saving in-memory database to mosquitto.db.
+1745235468: Error saving in-memory database, unable to open mosquitto.db.new for writing.
+1745235468: Error: Permission denied.
+1745237269: Saving in-memory database to mosquitto.db.
+1745237269: Error saving in-memory database, unable to open mosquitto.db.new for writing.
+1745237269: Error: Permission denied.
+1745239070: Saving in-memory database to mosquitto.db.
+1745239070: Error saving in-memory database, unable to open mosquitto.db.new for writing.
+1745239070: Error: Permission denied.
+1745240871: Saving in-memory database to mosquitto.db.
+1745240871: Error saving in-memory database, unable to open mosquitto.db.new for writing.
+1745240871: Error: Permission denied.
+1745242672: Saving in-memory database to mosquitto.db.
+1745242672: Error saving in-memory database, unable to open mosquitto.db.new for writing.
+1745242672: Error: Permission denied.
+1745244473: Saving in-memory database to mosquitto.db.
+1745244473: Error saving in-memory database, unable to open mosquitto.db.new for writing.
+1745244473: Error: Permission denied.
+1745246274: Saving in-memory database to mosquitto.db.
+1745246274: Error saving in-memory database, unable to open mosquitto.db.new for writing.
+1745246274: Error: Permission denied.
+1745248075: Saving in-memory database to mosquitto.db.
+1745248075: Error saving in-memory database, unable to open mosquitto.db.new for writing.
+1745248075: Error: Permission denied.
+1745249876: Saving in-memory database to mosquitto.db.
+1745249876: Error saving in-memory database, unable to open mosquitto.db.new for writing.
+1745249876: Error: Permission denied.
+1745251677: Saving in-memory database to mosquitto.db.
+1745251677: Error saving in-memory database, unable to open mosquitto.db.new for writing.
+1745251677: Error: Permission denied.
+1745253478: Saving in-memory database to mosquitto.db.
+1745253478: Error saving in-memory database, unable to open mosquitto.db.new for writing.
+1745253478: Error: Permission denied.
+1745255279: Saving in-memory database to mosquitto.db.
+1745255279: Error saving in-memory database, unable to open mosquitto.db.new for writing.
+1745255279: Error: Permission denied.
+1745257080: Saving in-memory database to mosquitto.db.
+1745257080: Error saving in-memory database, unable to open mosquitto.db.new for writing.
+1745257080: Error: Permission denied.
+1745258881: Saving in-memory database to mosquitto.db.
+1745258881: Error saving in-memory database, unable to open mosquitto.db.new for writing.
+1745258881: Error: Permission denied.
+1745260682: Saving in-memory database to mosquitto.db.
+1745260682: Error saving in-memory database, unable to open mosquitto.db.new for writing.
+1745260682: Error: Permission denied.
+1745262483: Saving in-memory database to mosquitto.db.
+1745262483: Error saving in-memory database, unable to open mosquitto.db.new for writing.
+1745262483: Error: Permission denied.
+1745264284: Saving in-memory database to mosquitto.db.
+1745264284: Error saving in-memory database, unable to open mosquitto.db.new for writing.
+1745264284: Error: Permission denied.
+1745266085: Saving in-memory database to mosquitto.db.
+1745266085: Error saving in-memory database, unable to open mosquitto.db.new for writing.
+1745266085: Error: Permission denied.
+1745267886: Saving in-memory database to mosquitto.db.
+1745267886: Error saving in-memory database, unable to open mosquitto.db.new for writing.
+1745267886: Error: Permission denied.
+1745269687: Saving in-memory database to mosquitto.db.
+1745269687: Error saving in-memory database, unable to open mosquitto.db.new for writing.
+1745269687: Error: Permission denied.
+1745271488: Saving in-memory database to mosquitto.db.
+1745271488: Error saving in-memory database, unable to open mosquitto.db.new for writing.
+1745271488: Error: Permission denied.
+1745273289: Saving in-memory database to mosquitto.db.
+1745273289: Error saving in-memory database, unable to open mosquitto.db.new for writing.
+1745273289: Error: Permission denied.
+1745275090: Saving in-memory database to mosquitto.db.
+1745275090: Error saving in-memory database, unable to open mosquitto.db.new for writing.
+1745275090: Error: Permission denied.
+1745276891: Saving in-memory database to mosquitto.db.
+1745276891: Error saving in-memory database, unable to open mosquitto.db.new for writing.
+1745276891: Error: Permission denied.
+1745278692: Saving in-memory database to mosquitto.db.
+1745278692: Error saving in-memory database, unable to open mosquitto.db.new for writing.
+1745278692: Error: Permission denied.
+1745280493: Saving in-memory database to mosquitto.db.
+1745280493: Error saving in-memory database, unable to open mosquitto.db.new for writing.
+1745280493: Error: Permission denied.
+1745282294: Saving in-memory database to mosquitto.db.
+1745282294: Error saving in-memory database, unable to open mosquitto.db.new for writing.
+1745282294: Error: Permission denied.
+1745284095: Saving in-memory database to mosquitto.db.
+1745284095: Error saving in-memory database, unable to open mosquitto.db.new for writing.
+1745284095: Error: Permission denied.
+1745285896: Saving in-memory database to mosquitto.db.
+1745285896: Error saving in-memory database, unable to open mosquitto.db.new for writing.
+1745285896: Error: Permission denied.
+1745287697: Saving in-memory database to mosquitto.db.
+1745287697: Error saving in-memory database, unable to open mosquitto.db.new for writing.
+1745287697: Error: Permission denied.
+1745289498: Saving in-memory database to mosquitto.db.
+1745289498: Error saving in-memory database, unable to open mosquitto.db.new for writing.
+1745289498: Error: Permission denied.
+1745291299: Saving in-memory database to mosquitto.db.
+1745291299: Error saving in-memory database, unable to open mosquitto.db.new for writing.
+1745291299: Error: Permission denied.
+1745293100: Saving in-memory database to mosquitto.db.
+1745293100: Error saving in-memory database, unable to open mosquitto.db.new for writing.
+1745293100: Error: Permission denied.
+1745294901: Saving in-memory database to mosquitto.db.
+1745294901: Error saving in-memory database, unable to open mosquitto.db.new for writing.
+1745294901: Error: Permission denied.
+1745296702: Saving in-memory database to mosquitto.db.
+1745296702: Error saving in-memory database, unable to open mosquitto.db.new for writing.
+1745296702: Error: Permission denied.
+1745298503: Saving in-memory database to mosquitto.db.
+1745298503: Error saving in-memory database, unable to open mosquitto.db.new for writing.
+1745298503: Error: Permission denied.
+1745300317: Saving in-memory database to mosquitto.db.
+1745300317: Error saving in-memory database, unable to open mosquitto.db.new for writing.
+1745300317: Error: Permission denied.
+1745302118: Saving in-memory database to mosquitto.db.
+1745302118: Error saving in-memory database, unable to open mosquitto.db.new for writing.
+1745302118: Error: Permission denied.
+1745303919: Saving in-memory database to mosquitto.db.
+1745303919: Error saving in-memory database, unable to open mosquitto.db.new for writing.
+1745303919: Error: Permission denied.
+1745305720: Saving in-memory database to mosquitto.db.
+1745305720: Error saving in-memory database, unable to open mosquitto.db.new for writing.
+1745305720: Error: Permission denied.
+1745307521: Saving in-memory database to mosquitto.db.
+1745307521: Error saving in-memory database, unable to open mosquitto.db.new for writing.
+1745307521: Error: Permission denied.
+1745309322: Saving in-memory database to mosquitto.db.
+1745309322: Error saving in-memory database, unable to open mosquitto.db.new for writing.
+1745309322: Error: Permission denied.
+1745311123: Saving in-memory database to mosquitto.db.
+1745311123: Error saving in-memory database, unable to open mosquitto.db.new for writing.
+1745311123: Error: Permission denied.
+1745312924: Saving in-memory database to mosquitto.db.
+1745312924: Error saving in-memory database, unable to open mosquitto.db.new for writing.
+1745312924: Error: Permission denied.
+1745314725: Saving in-memory database to mosquitto.db.
+1745314725: Error saving in-memory database, unable to open mosquitto.db.new for writing.
+1745314725: Error: Permission denied.
+1745316526: Saving in-memory database to mosquitto.db.
+1745316526: Error saving in-memory database, unable to open mosquitto.db.new for writing.
+1745316526: Error: Permission denied.
+1745318327: Saving in-memory database to mosquitto.db.
+1745318327: Error saving in-memory database, unable to open mosquitto.db.new for writing.
+1745318327: Error: Permission denied.
+1745320128: Saving in-memory database to mosquitto.db.
+1745320128: Error saving in-memory database, unable to open mosquitto.db.new for writing.
+1745320128: Error: Permission denied.
+1745321929: Saving in-memory database to mosquitto.db.
+1745321929: Error saving in-memory database, unable to open mosquitto.db.new for writing.
+1745321929: Error: Permission denied.
+1745323730: Saving in-memory database to mosquitto.db.
+1745323730: Error saving in-memory database, unable to open mosquitto.db.new for writing.
+1745323730: Error: Permission denied.
+1745325531: Saving in-memory database to mosquitto.db.
+1745325531: Error saving in-memory database, unable to open mosquitto.db.new for writing.
+1745325531: Error: Permission denied.
+1745327332: Saving in-memory database to mosquitto.db.
+1745327332: Error saving in-memory database, unable to open mosquitto.db.new for writing.
+1745327332: Error: Permission denied.
+1745329133: Saving in-memory database to mosquitto.db.
+1745329133: Error saving in-memory database, unable to open mosquitto.db.new for writing.
+1745329133: Error: Permission denied.
+1745330934: Saving in-memory database to mosquitto.db.
+1745330934: Error saving in-memory database, unable to open mosquitto.db.new for writing.
+1745330934: Error: Permission denied.
+1745332735: Saving in-memory database to mosquitto.db.
+1745332735: Error saving in-memory database, unable to open mosquitto.db.new for writing.
+1745332735: Error: Permission denied.
+1745334536: Saving in-memory database to mosquitto.db.
+1745334536: Error saving in-memory database, unable to open mosquitto.db.new for writing.
+1745334536: Error: Permission denied.
+1745336337: Saving in-memory database to mosquitto.db.
+1745336337: Error saving in-memory database, unable to open mosquitto.db.new for writing.
+1745336337: Error: Permission denied.
+1745338138: Saving in-memory database to mosquitto.db.
+1745338138: Error saving in-memory database, unable to open mosquitto.db.new for writing.
+1745338138: Error: Permission denied.
+1745339939: Saving in-memory database to mosquitto.db.
+1745339939: Error saving in-memory database, unable to open mosquitto.db.new for writing.
+1745339939: Error: Permission denied.
+1745341740: Saving in-memory database to mosquitto.db.
+1745341740: Error saving in-memory database, unable to open mosquitto.db.new for writing.
+1745341740: Error: Permission denied.
+1745343541: Saving in-memory database to mosquitto.db.
+1745343541: Error saving in-memory database, unable to open mosquitto.db.new for writing.
+1745343541: Error: Permission denied.
+1745345542: Saving in-memory database to mosquitto.db.
+1745345542: Error saving in-memory database, unable to open mosquitto.db.new for writing.
+1745345542: Error: Permission denied.
+1745393910: Saving in-memory database to mosquitto.db.
+1745393910: Error saving in-memory database, unable to open mosquitto.db.new for writing.
+1745393910: Error: Permission denied.
+1745395711: Saving in-memory database to mosquitto.db.
+1745395711: Error saving in-memory database, unable to open mosquitto.db.new for writing.
+1745395711: Error: Permission denied.
+1745397512: Saving in-memory database to mosquitto.db.
+1745397512: Error saving in-memory database, unable to open mosquitto.db.new for writing.
+1745397512: Error: Permission denied.
+1745399313: Saving in-memory database to mosquitto.db.
+1745399313: Error saving in-memory database, unable to open mosquitto.db.new for writing.
+1745399313: Error: Permission denied.
+1745401114: Saving in-memory database to mosquitto.db.
+1745401114: Error saving in-memory database, unable to open mosquitto.db.new for writing.
+1745401114: Error: Permission denied.
+1745402915: Saving in-memory database to mosquitto.db.
+1745402915: Error saving in-memory database, unable to open mosquitto.db.new for writing.
+1745402915: Error: Permission denied.
+1745404716: Saving in-memory database to mosquitto.db.
+1745404716: Error saving in-memory database, unable to open mosquitto.db.new for writing.
+1745404716: Error: Permission denied.
+1745406517: Saving in-memory database to mosquitto.db.
+1745406517: Error saving in-memory database, unable to open mosquitto.db.new for writing.
+1745406517: Error: Permission denied.
+1745408318: Saving in-memory database to mosquitto.db.
+1745408318: Error saving in-memory database, unable to open mosquitto.db.new for writing.
+1745408318: Error: Permission denied.
+1745410119: Saving in-memory database to mosquitto.db.
+1745410119: Error saving in-memory database, unable to open mosquitto.db.new for writing.
+1745410119: Error: Permission denied.
+1745411920: Saving in-memory database to mosquitto.db.
+1745411920: Error saving in-memory database, unable to open mosquitto.db.new for writing.
+1745411920: Error: Permission denied.
+1745413721: Saving in-memory database to mosquitto.db.
+1745413721: Error saving in-memory database, unable to open mosquitto.db.new for writing.
+1745413721: Error: Permission denied.
+1745415522: Saving in-memory database to mosquitto.db.
+1745415522: Error saving in-memory database, unable to open mosquitto.db.new for writing.
+1745415522: Error: Permission denied.
+1745416011: mosquitto version 2.0.21 terminating
+1745416011: Saving in-memory database to mosquitto.db.
+1745416011: Error saving in-memory database, unable to open mosquitto.db.new for writing.
+1745416011: Error: Permission denied.
+1745480213: mosquitto version 2.0.21 starting
+1745480213: Config loaded from /mosquitto/config/mosquitto.conf.
+1745480213: Opening ipv4 listen socket on port 1883.
+1745480213: Opening ipv6 listen socket on port 1883.
+1745480213: mosquitto version 2.0.21 running
+1745482014: Saving in-memory database to mosquitto.db.
+1745482014: Error saving in-memory database, unable to open mosquitto.db.new for writing.
+1745482014: Error: Permission denied.
+1745483815: Saving in-memory database to mosquitto.db.
+1745483815: Error saving in-memory database, unable to open mosquitto.db.new for writing.
+1745483815: Error: Permission denied.
+1745485616: Saving in-memory database to mosquitto.db.
+1745485616: Error saving in-memory database, unable to open mosquitto.db.new for writing.
+1745485616: Error: Permission denied.
+1745487417: Saving in-memory database to mosquitto.db.
+1745487417: Error saving in-memory database, unable to open mosquitto.db.new for writing.
+1745487417: Error: Permission denied.
+1745489218: Saving in-memory database to mosquitto.db.
+1745489218: Error saving in-memory database, unable to open mosquitto.db.new for writing.
+1745489218: Error: Permission denied.
+1745491019: Saving in-memory database to mosquitto.db.
+1745491019: Error saving in-memory database, unable to open mosquitto.db.new for writing.
+1745491019: Error: Permission denied.
+1745491133: mosquitto version 2.0.21 terminating
+1745491133: Saving in-memory database to mosquitto.db.
+1745491133: Error saving in-memory database, unable to open mosquitto.db.new for writing.
+1745491133: Error: Permission denied.
+1745491870: mosquitto version 2.0.21 starting
+1745491870: Config loaded from /mosquitto/config/mosquitto.conf.
+1745491870: Opening ipv4 listen socket on port 1883.
+1745491870: Opening ipv6 listen socket on port 1883.
+1745491870: mosquitto version 2.0.21 running
+1745493671: Saving in-memory database to mosquitto.db.
+1745493671: Error saving in-memory database, unable to open mosquitto.db.new for writing.
+1745493671: Error: Permission denied.
+1745495472: Saving in-memory database to mosquitto.db.
+1745495472: Error saving in-memory database, unable to open mosquitto.db.new for writing.
+1745495472: Error: Permission denied.
+1745497273: Saving in-memory database to mosquitto.db.
+1745497273: Error saving in-memory database, unable to open mosquitto.db.new for writing.
+1745497273: Error: Permission denied.
+1745499074: Saving in-memory database to mosquitto.db.
+1745499074: Error saving in-memory database, unable to open mosquitto.db.new for writing.
+1745499074: Error: Permission denied.
+1745500875: Saving in-memory database to mosquitto.db.
+1745500875: Error saving in-memory database, unable to open mosquitto.db.new for writing.
+1745500875: Error: Permission denied.
+1745511268: Saving in-memory database to mosquitto.db.
+1745511268: Error saving in-memory database, unable to open mosquitto.db.new for writing.
+1745511268: Error: Permission denied.
+1745513069: Saving in-memory database to mosquitto.db.
+1745513069: Error saving in-memory database, unable to open mosquitto.db.new for writing.
+1745513069: Error: Permission denied.
+1745514870: Saving in-memory database to mosquitto.db.
+1745514870: Error saving in-memory database, unable to open mosquitto.db.new for writing.
+1745514870: Error: Permission denied.
+1745516671: Saving in-memory database to mosquitto.db.
+1745516671: Error saving in-memory database, unable to open mosquitto.db.new for writing.
+1745516671: Error: Permission denied.
+1745518472: Saving in-memory database to mosquitto.db.
+1745518472: Error saving in-memory database, unable to open mosquitto.db.new for writing.
+1745518472: Error: Permission denied.
+1745520273: Saving in-memory database to mosquitto.db.
+1745520273: Error saving in-memory database, unable to open mosquitto.db.new for writing.
+1745520273: Error: Permission denied.
+1745522074: Saving in-memory database to mosquitto.db.
+1745522074: Error saving in-memory database, unable to open mosquitto.db.new for writing.
+1745522074: Error: Permission denied.
+1745523875: Saving in-memory database to mosquitto.db.
+1745523875: Error saving in-memory database, unable to open mosquitto.db.new for writing.
+1745523875: Error: Permission denied.
+1745525676: Saving in-memory database to mosquitto.db.
+1745525676: Error saving in-memory database, unable to open mosquitto.db.new for writing.
+1745525676: Error: Permission denied.
+1745527477: Saving in-memory database to mosquitto.db.
+1745527477: Error saving in-memory database, unable to open mosquitto.db.new for writing.
+1745527477: Error: Permission denied.
+1745529278: Saving in-memory database to mosquitto.db.
+1745529278: Error saving in-memory database, unable to open mosquitto.db.new for writing.
+1745529278: Error: Permission denied.
+1745531079: Saving in-memory database to mosquitto.db.
+1745531079: Error saving in-memory database, unable to open mosquitto.db.new for writing.
+1745531079: Error: Permission denied.
+1745532880: Saving in-memory database to mosquitto.db.
+1745532880: Error saving in-memory database, unable to open mosquitto.db.new for writing.
+1745532880: Error: Permission denied.
+1745534681: Saving in-memory database to mosquitto.db.
+1745534681: Error saving in-memory database, unable to open mosquitto.db.new for writing.
+1745534681: Error: Permission denied.
+1745536482: Saving in-memory database to mosquitto.db.
+1745536482: Error saving in-memory database, unable to open mosquitto.db.new for writing.
+1745536482: Error: Permission denied.
+1745538283: Saving in-memory database to mosquitto.db.
+1745538283: Error saving in-memory database, unable to open mosquitto.db.new for writing.
+1745538283: Error: Permission denied.
+1745540084: Saving in-memory database to mosquitto.db.
+1745540084: Error saving in-memory database, unable to open mosquitto.db.new for writing.
+1745540084: Error: Permission denied.
+1745541885: Saving in-memory database to mosquitto.db.
+1745541885: Error saving in-memory database, unable to open mosquitto.db.new for writing.
+1745541885: Error: Permission denied.
+1745543686: Saving in-memory database to mosquitto.db.
+1745543686: Error saving in-memory database, unable to open mosquitto.db.new for writing.
+1745543686: Error: Permission denied.
+1745545487: Saving in-memory database to mosquitto.db.
+1745545487: Error saving in-memory database, unable to open mosquitto.db.new for writing.
+1745545487: Error: Permission denied.
+1745547288: Saving in-memory database to mosquitto.db.
+1745547288: Error saving in-memory database, unable to open mosquitto.db.new for writing.
+1745547288: Error: Permission denied.
+1745549089: Saving in-memory database to mosquitto.db.
+1745549089: Error saving in-memory database, unable to open mosquitto.db.new for writing.
+1745549089: Error: Permission denied.
+1745550890: Saving in-memory database to mosquitto.db.
+1745550890: Error saving in-memory database, unable to open mosquitto.db.new for writing.
+1745550890: Error: Permission denied.
+1745552691: Saving in-memory database to mosquitto.db.
+1745552691: Error saving in-memory database, unable to open mosquitto.db.new for writing.
+1745552691: Error: Permission denied.
+1745554492: Saving in-memory database to mosquitto.db.
+1745554492: Error saving in-memory database, unable to open mosquitto.db.new for writing.
+1745554492: Error: Permission denied.
+1745556293: Saving in-memory database to mosquitto.db.
+1745556293: Error saving in-memory database, unable to open mosquitto.db.new for writing.
+1745556293: Error: Permission denied.
+1745558094: Saving in-memory database to mosquitto.db.
+1745558094: Error saving in-memory database, unable to open mosquitto.db.new for writing.
+1745558094: Error: Permission denied.
+1745559895: Saving in-memory database to mosquitto.db.
+1745559895: Error saving in-memory database, unable to open mosquitto.db.new for writing.
+1745559895: Error: Permission denied.
+1745561696: Saving in-memory database to mosquitto.db.
+1745561696: Error saving in-memory database, unable to open mosquitto.db.new for writing.
+1745561696: Error: Permission denied.
+1745563497: Saving in-memory database to mosquitto.db.
+1745563497: Error saving in-memory database, unable to open mosquitto.db.new for writing.
+1745563497: Error: Permission denied.
+1745565298: Saving in-memory database to mosquitto.db.
+1745565298: Error saving in-memory database, unable to open mosquitto.db.new for writing.
+1745565298: Error: Permission denied.
+1745567099: Saving in-memory database to mosquitto.db.
+1745567099: Error saving in-memory database, unable to open mosquitto.db.new for writing.
+1745567099: Error: Permission denied.
+1745568900: Saving in-memory database to mosquitto.db.
+1745568900: Error saving in-memory database, unable to open mosquitto.db.new for writing.
+1745568900: Error: Permission denied.
+1745570701: Saving in-memory database to mosquitto.db.
+1745570701: Error saving in-memory database, unable to open mosquitto.db.new for writing.
+1745570701: Error: Permission denied.
+1745572502: Saving in-memory database to mosquitto.db.
+1745572502: Error saving in-memory database, unable to open mosquitto.db.new for writing.
+1745572502: Error: Permission denied.
+1745574303: Saving in-memory database to mosquitto.db.
+1745574303: Error saving in-memory database, unable to open mosquitto.db.new for writing.
+1745574303: Error: Permission denied.
+1745576104: Saving in-memory database to mosquitto.db.
+1745576104: Error saving in-memory database, unable to open mosquitto.db.new for writing.
+1745576104: Error: Permission denied.
+1745577905: Saving in-memory database to mosquitto.db.
+1745577905: Error saving in-memory database, unable to open mosquitto.db.new for writing.
+1745577905: Error: Permission denied.
+1745579706: Saving in-memory database to mosquitto.db.
+1745579706: Error saving in-memory database, unable to open mosquitto.db.new for writing.
+1745579706: Error: Permission denied.
+1745581507: Saving in-memory database to mosquitto.db.
+1745581507: Error saving in-memory database, unable to open mosquitto.db.new for writing.
+1745581507: Error: Permission denied.
+1745583308: Saving in-memory database to mosquitto.db.
+1745583308: Error saving in-memory database, unable to open mosquitto.db.new for writing.
+1745583308: Error: Permission denied.
+1745585109: Saving in-memory database to mosquitto.db.
+1745585109: Error saving in-memory database, unable to open mosquitto.db.new for writing.
+1745585109: Error: Permission denied.
+1745586910: Saving in-memory database to mosquitto.db.
+1745586910: Error saving in-memory database, unable to open mosquitto.db.new for writing.
+1745586910: Error: Permission denied.
+1745588711: Saving in-memory database to mosquitto.db.
+1745588711: Error saving in-memory database, unable to open mosquitto.db.new for writing.
+1745588711: Error: Permission denied.
+1745590512: Saving in-memory database to mosquitto.db.
+1745590512: Error saving in-memory database, unable to open mosquitto.db.new for writing.
+1745590512: Error: Permission denied.
+1745598863: Saving in-memory database to mosquitto.db.
+1745598863: Error saving in-memory database, unable to open mosquitto.db.new for writing.
+1745598863: Error: Permission denied.
+1745600766: Saving in-memory database to mosquitto.db.
+1745600766: Error saving in-memory database, unable to open mosquitto.db.new for writing.
+1745600766: Error: Permission denied.
+1745603380: Saving in-memory database to mosquitto.db.
+1745603380: Error saving in-memory database, unable to open mosquitto.db.new for writing.
+1745603380: Error: Permission denied.
+1745609997: Saving in-memory database to mosquitto.db.
+1745609997: Error saving in-memory database, unable to open mosquitto.db.new for writing.
+1745609997: Error: Permission denied.
+1745651811: Saving in-memory database to mosquitto.db.
+1745651811: Error saving in-memory database, unable to open mosquitto.db.new for writing.
+1745651811: Error: Permission denied.
+1745655886: Saving in-memory database to mosquitto.db.
+1745655886: Error saving in-memory database, unable to open mosquitto.db.new for writing.
+1745655886: Error: Permission denied.
+1745679623: Saving in-memory database to mosquitto.db.
+1745679623: Error saving in-memory database, unable to open mosquitto.db.new for writing.
+1745679623: Error: Permission denied.
+1745771408: Saving in-memory database to mosquitto.db.
+1745771408: Error saving in-memory database, unable to open mosquitto.db.new for writing.
+1745771408: Error: Permission denied.
+1745814849: Saving in-memory database to mosquitto.db.
+1745814849: Error saving in-memory database, unable to open mosquitto.db.new for writing.
+1745814849: Error: Permission denied.
+1745816650: Saving in-memory database to mosquitto.db.
+1745816650: Error saving in-memory database, unable to open mosquitto.db.new for writing.
+1745816650: Error: Permission denied.
+1745818451: Saving in-memory database to mosquitto.db.
+1745818451: Error saving in-memory database, unable to open mosquitto.db.new for writing.
+1745818451: Error: Permission denied.
+1745820252: Saving in-memory database to mosquitto.db.
+1745820252: Error saving in-memory database, unable to open mosquitto.db.new for writing.
+1745820252: Error: Permission denied.
+1745822053: Saving in-memory database to mosquitto.db.
+1745822053: Error saving in-memory database, unable to open mosquitto.db.new for writing.
+1745822053: Error: Permission denied.
+1745823854: Saving in-memory database to mosquitto.db.
+1745823854: Error saving in-memory database, unable to open mosquitto.db.new for writing.
+1745823854: Error: Permission denied.
+1745825655: Saving in-memory database to mosquitto.db.
+1745825655: Error saving in-memory database, unable to open mosquitto.db.new for writing.
+1745825655: Error: Permission denied.
+1745827456: Saving in-memory database to mosquitto.db.
+1745827456: Error saving in-memory database, unable to open mosquitto.db.new for writing.
+1745827456: Error: Permission denied.
+1745829257: Saving in-memory database to mosquitto.db.
+1745829257: Error saving in-memory database, unable to open mosquitto.db.new for writing.
+1745829257: Error: Permission denied.
+1745831058: Saving in-memory database to mosquitto.db.
+1745831058: Error saving in-memory database, unable to open mosquitto.db.new for writing.
+1745831058: Error: Permission denied.
+1745832859: Saving in-memory database to mosquitto.db.
+1745832859: Error saving in-memory database, unable to open mosquitto.db.new for writing.
+1745832859: Error: Permission denied.
+1745834660: Saving in-memory database to mosquitto.db.
+1745834660: Error saving in-memory database, unable to open mosquitto.db.new for writing.
+1745834660: Error: Permission denied.
+1745836461: Saving in-memory database to mosquitto.db.
+1745836461: Error saving in-memory database, unable to open mosquitto.db.new for writing.
+1745836461: Error: Permission denied.
+1745838262: Saving in-memory database to mosquitto.db.
+1745838262: Error saving in-memory database, unable to open mosquitto.db.new for writing.
+1745838262: Error: Permission denied.
+1745869583: Saving in-memory database to mosquitto.db.
+1745869583: Error saving in-memory database, unable to open mosquitto.db.new for writing.
+1745869583: Error: Permission denied.
+1745913490: Saving in-memory database to mosquitto.db.
+1745913490: Error saving in-memory database, unable to open mosquitto.db.new for writing.
+1745913490: Error: Permission denied.
+1745913643: mosquitto version 2.0.21 starting
+1745913643: Config loaded from /mosquitto/config/mosquitto.conf.
+1745913643: Opening ipv4 listen socket on port 1883.
+1745913643: Opening ipv6 listen socket on port 1883.
+1745913643: mosquitto version 2.0.21 running
+1745915444: Saving in-memory database to mosquitto.db.
+1745915444: Error saving in-memory database, unable to open mosquitto.db.new for writing.
+1745915444: Error: Permission denied.
+1745917245: Saving in-memory database to mosquitto.db.
+1745917245: Error saving in-memory database, unable to open mosquitto.db.new for writing.
+1745917245: Error: Permission denied.
+1745919046: Saving in-memory database to mosquitto.db.
+1745919046: Error saving in-memory database, unable to open mosquitto.db.new for writing.
+1745919046: Error: Permission denied.
+1745920847: Saving in-memory database to mosquitto.db.
+1745920847: Error saving in-memory database, unable to open mosquitto.db.new for writing.
+1745920847: Error: Permission denied.
+1745921650: mosquitto version 2.0.21 terminating
+1745921650: Saving in-memory database to mosquitto.db.
+1745921650: Error saving in-memory database, unable to open mosquitto.db.new for writing.
+1745921650: Error: Permission denied.
+1745923550: mosquitto version 2.0.21 starting
+1745923550: Config loaded from /mosquitto/config/mosquitto.conf.
+1745923550: Opening ipv4 listen socket on port 1883.
+1745923550: Opening ipv6 listen socket on port 1883.
+1745923550: mosquitto version 2.0.21 running
+1745927015: Saving in-memory database to mosquitto.db.
+1745927015: Error saving in-memory database, unable to open mosquitto.db.new for writing.
+1745927015: Error: Permission denied.
+1745929108: Saving in-memory database to mosquitto.db.
+1745929108: Error saving in-memory database, unable to open mosquitto.db.new for writing.
+1745929108: Error: Permission denied.
+1745930909: Saving in-memory database to mosquitto.db.
+1745930909: Error saving in-memory database, unable to open mosquitto.db.new for writing.
+1745930909: Error: Permission denied.
+1745932710: Saving in-memory database to mosquitto.db.
+1745932710: Error saving in-memory database, unable to open mosquitto.db.new for writing.
+1745932710: Error: Permission denied.
+1745934511: Saving in-memory database to mosquitto.db.
+1745934511: Error saving in-memory database, unable to open mosquitto.db.new for writing.
+1745934511: Error: Permission denied.
+1745936312: Saving in-memory database to mosquitto.db.
+1745936312: Error saving in-memory database, unable to open mosquitto.db.new for writing.
+1745936312: Error: Permission denied.
+1745938113: Saving in-memory database to mosquitto.db.
+1745938113: Error saving in-memory database, unable to open mosquitto.db.new for writing.
+1745938113: Error: Permission denied.
+1745939914: Saving in-memory database to mosquitto.db.
+1745939914: Error saving in-memory database, unable to open mosquitto.db.new for writing.
+1745939914: Error: Permission denied.
+1745941715: Saving in-memory database to mosquitto.db.
+1745941715: Error saving in-memory database, unable to open mosquitto.db.new for writing.
+1745941715: Error: Permission denied.
+1745943516: Saving in-memory database to mosquitto.db.
+1745943516: Error saving in-memory database, unable to open mosquitto.db.new for writing.
+1745943516: Error: Permission denied.
+1745945317: Saving in-memory database to mosquitto.db.
+1745945317: Error saving in-memory database, unable to open mosquitto.db.new for writing.
+1745945317: Error: Permission denied.
+1745947118: Saving in-memory database to mosquitto.db.
+1745947118: Error saving in-memory database, unable to open mosquitto.db.new for writing.
+1745947118: Error: Permission denied.
+1745948919: Saving in-memory database to mosquitto.db.
+1745948919: Error saving in-memory database, unable to open mosquitto.db.new for writing.
+1745948919: Error: Permission denied.
+1745950720: Saving in-memory database to mosquitto.db.
+1745950720: Error saving in-memory database, unable to open mosquitto.db.new for writing.
+1745950720: Error: Permission denied.
+1745952521: Saving in-memory database to mosquitto.db.
+1745952521: Error saving in-memory database, unable to open mosquitto.db.new for writing.
+1745952521: Error: Permission denied.
+1745954322: Saving in-memory database to mosquitto.db.
+1745954322: Error saving in-memory database, unable to open mosquitto.db.new for writing.
+1745954322: Error: Permission denied.
+1745956123: Saving in-memory database to mosquitto.db.
+1745956123: Error saving in-memory database, unable to open mosquitto.db.new for writing.
+1745956123: Error: Permission denied.
+1745957924: Saving in-memory database to mosquitto.db.
+1745957924: Error saving in-memory database, unable to open mosquitto.db.new for writing.
+1745957924: Error: Permission denied.
+1745959725: Saving in-memory database to mosquitto.db.
+1745959725: Error saving in-memory database, unable to open mosquitto.db.new for writing.
+1745959725: Error: Permission denied.
+1745961526: Saving in-memory database to mosquitto.db.
+1745961526: Error saving in-memory database, unable to open mosquitto.db.new for writing.
+1745961526: Error: Permission denied.
+1745963327: Saving in-memory database to mosquitto.db.
+1745963327: Error saving in-memory database, unable to open mosquitto.db.new for writing.
+1745963327: Error: Permission denied.
+1745965128: Saving in-memory database to mosquitto.db.
+1745965128: Error saving in-memory database, unable to open mosquitto.db.new for writing.
+1745965128: Error: Permission denied.
+1745966929: Saving in-memory database to mosquitto.db.
+1745966929: Error saving in-memory database, unable to open mosquitto.db.new for writing.
+1745966929: Error: Permission denied.
+1746006505: Saving in-memory database to mosquitto.db.
+1746006505: Error saving in-memory database, unable to open mosquitto.db.new for writing.
+1746006505: Error: Permission denied.
+1746008306: Saving in-memory database to mosquitto.db.
+1746008306: Error saving in-memory database, unable to open mosquitto.db.new for writing.
+1746008306: Error: Permission denied.
+1746010107: Saving in-memory database to mosquitto.db.
+1746010107: Error saving in-memory database, unable to open mosquitto.db.new for writing.
+1746010107: Error: Permission denied.
+1746011908: Saving in-memory database to mosquitto.db.
+1746011908: Error saving in-memory database, unable to open mosquitto.db.new for writing.
+1746011908: Error: Permission denied.
+1746013709: Saving in-memory database to mosquitto.db.
+1746013709: Error saving in-memory database, unable to open mosquitto.db.new for writing.
+1746013709: Error: Permission denied.
+1746015510: Saving in-memory database to mosquitto.db.
+1746015510: Error saving in-memory database, unable to open mosquitto.db.new for writing.
+1746015510: Error: Permission denied.
+1746017311: Saving in-memory database to mosquitto.db.
+1746017311: Error saving in-memory database, unable to open mosquitto.db.new for writing.
+1746017311: Error: Permission denied.
+1746019112: Saving in-memory database to mosquitto.db.
+1746019112: Error saving in-memory database, unable to open mosquitto.db.new for writing.
+1746019112: Error: Permission denied.
+1746020913: Saving in-memory database to mosquitto.db.
+1746020913: Error saving in-memory database, unable to open mosquitto.db.new for writing.
+1746020913: Error: Permission denied.
+1746022714: Saving in-memory database to mosquitto.db.
+1746022714: Error saving in-memory database, unable to open mosquitto.db.new for writing.
+1746022714: Error: Permission denied.
+1746024515: Saving in-memory database to mosquitto.db.
+1746024515: Error saving in-memory database, unable to open mosquitto.db.new for writing.
+1746024515: Error: Permission denied.
+1746026316: Saving in-memory database to mosquitto.db.
+1746026316: Error saving in-memory database, unable to open mosquitto.db.new for writing.
+1746026316: Error: Permission denied.
+1746028117: Saving in-memory database to mosquitto.db.
+1746028117: Error saving in-memory database, unable to open mosquitto.db.new for writing.
+1746028117: Error: Permission denied.
+1746029918: Saving in-memory database to mosquitto.db.
+1746029918: Error saving in-memory database, unable to open mosquitto.db.new for writing.
+1746029918: Error: Permission denied.
+1746031719: Saving in-memory database to mosquitto.db.
+1746031719: Error saving in-memory database, unable to open mosquitto.db.new for writing.
+1746031719: Error: Permission denied.
+1746033520: Saving in-memory database to mosquitto.db.
+1746033520: Error saving in-memory database, unable to open mosquitto.db.new for writing.
+1746033520: Error: Permission denied.
+1746035321: Saving in-memory database to mosquitto.db.
+1746035321: Error saving in-memory database, unable to open mosquitto.db.new for writing.
+1746035321: Error: Permission denied.
+1746037122: Saving in-memory database to mosquitto.db.
+1746037122: Error saving in-memory database, unable to open mosquitto.db.new for writing.
+1746037122: Error: Permission denied.
+1746038923: Saving in-memory database to mosquitto.db.
+1746038923: Error saving in-memory database, unable to open mosquitto.db.new for writing.
+1746038923: Error: Permission denied.
+1746040724: Saving in-memory database to mosquitto.db.
+1746040724: Error saving in-memory database, unable to open mosquitto.db.new for writing.
+1746040724: Error: Permission denied.
+1746042525: Saving in-memory database to mosquitto.db.
+1746042525: Error saving in-memory database, unable to open mosquitto.db.new for writing.
+1746042525: Error: Permission denied.
+1746044326: Saving in-memory database to mosquitto.db.
+1746044326: Error saving in-memory database, unable to open mosquitto.db.new for writing.
+1746044326: Error: Permission denied.
+1746046127: Saving in-memory database to mosquitto.db.
+1746046127: Error saving in-memory database, unable to open mosquitto.db.new for writing.
+1746046127: Error: Permission denied.
+1746047928: Saving in-memory database to mosquitto.db.
+1746047928: Error saving in-memory database, unable to open mosquitto.db.new for writing.
+1746047928: Error: Permission denied.
+1746049729: Saving in-memory database to mosquitto.db.
+1746049729: Error saving in-memory database, unable to open mosquitto.db.new for writing.
+1746049729: Error: Permission denied.
+1746051530: Saving in-memory database to mosquitto.db.
+1746051530: Error saving in-memory database, unable to open mosquitto.db.new for writing.
+1746051530: Error: Permission denied.
+1746053331: Saving in-memory database to mosquitto.db.
+1746053331: Error saving in-memory database, unable to open mosquitto.db.new for writing.
+1746053331: Error: Permission denied.
+1746055132: Saving in-memory database to mosquitto.db.
+1746055132: Error saving in-memory database, unable to open mosquitto.db.new for writing.
+1746055132: Error: Permission denied.
+1746056933: Saving in-memory database to mosquitto.db.
+1746056933: Error saving in-memory database, unable to open mosquitto.db.new for writing.
+1746056933: Error: Permission denied.
+1746058734: Saving in-memory database to mosquitto.db.
+1746058734: Error saving in-memory database, unable to open mosquitto.db.new for writing.
+1746058734: Error: Permission denied.
+1746060535: Saving in-memory database to mosquitto.db.
+1746060535: Error saving in-memory database, unable to open mosquitto.db.new for writing.
+1746060535: Error: Permission denied.
+1746062336: Saving in-memory database to mosquitto.db.
+1746062336: Error saving in-memory database, unable to open mosquitto.db.new for writing.
+1746062336: Error: Permission denied.
+1746064137: Saving in-memory database to mosquitto.db.
+1746064137: Error saving in-memory database, unable to open mosquitto.db.new for writing.
+1746064137: Error: Permission denied.
+1746065938: Saving in-memory database to mosquitto.db.
+1746065938: Error saving in-memory database, unable to open mosquitto.db.new for writing.
+1746065938: Error: Permission denied.
+1746067739: Saving in-memory database to mosquitto.db.
+1746067739: Error saving in-memory database, unable to open mosquitto.db.new for writing.
+1746067739: Error: Permission denied.
+1746069540: Saving in-memory database to mosquitto.db.
+1746069540: Error saving in-memory database, unable to open mosquitto.db.new for writing.
+1746069540: Error: Permission denied.
+1746071341: Saving in-memory database to mosquitto.db.
+1746071341: Error saving in-memory database, unable to open mosquitto.db.new for writing.
+1746071341: Error: Permission denied.
+1746073142: Saving in-memory database to mosquitto.db.
+1746073142: Error saving in-memory database, unable to open mosquitto.db.new for writing.
+1746073142: Error: Permission denied.
+1746074943: Saving in-memory database to mosquitto.db.
+1746074943: Error saving in-memory database, unable to open mosquitto.db.new for writing.
+1746074943: Error: Permission denied.
+1746076744: Saving in-memory database to mosquitto.db.
+1746076744: Error saving in-memory database, unable to open mosquitto.db.new for writing.
+1746076744: Error: Permission denied.
+1746078545: Saving in-memory database to mosquitto.db.
+1746078545: Error saving in-memory database, unable to open mosquitto.db.new for writing.
+1746078545: Error: Permission denied.
+1746080346: Saving in-memory database to mosquitto.db.
+1746080346: Error saving in-memory database, unable to open mosquitto.db.new for writing.
+1746080346: Error: Permission denied.
+1746082147: Saving in-memory database to mosquitto.db.
+1746082147: Error saving in-memory database, unable to open mosquitto.db.new for writing.
+1746082147: Error: Permission denied.
+1746083948: Saving in-memory database to mosquitto.db.
+1746083948: Error saving in-memory database, unable to open mosquitto.db.new for writing.
+1746083948: Error: Permission denied.
+1746085749: Saving in-memory database to mosquitto.db.
+1746085749: Error saving in-memory database, unable to open mosquitto.db.new for writing.
+1746085749: Error: Permission denied.
+1746087550: Saving in-memory database to mosquitto.db.
+1746087550: Error saving in-memory database, unable to open mosquitto.db.new for writing.
+1746087550: Error: Permission denied.
+1746089351: Saving in-memory database to mosquitto.db.
+1746089351: Error saving in-memory database, unable to open mosquitto.db.new for writing.
+1746089351: Error: Permission denied.
+1746091152: Saving in-memory database to mosquitto.db.
+1746091152: Error saving in-memory database, unable to open mosquitto.db.new for writing.
+1746091152: Error: Permission denied.
+1746092953: Saving in-memory database to mosquitto.db.
+1746092953: Error saving in-memory database, unable to open mosquitto.db.new for writing.
+1746092953: Error: Permission denied.
+1746094754: Saving in-memory database to mosquitto.db.
+1746094754: Error saving in-memory database, unable to open mosquitto.db.new for writing.
+1746094754: Error: Permission denied.
+1746096555: Saving in-memory database to mosquitto.db.
+1746096555: Error saving in-memory database, unable to open mosquitto.db.new for writing.
+1746096555: Error: Permission denied.
+1746098356: Saving in-memory database to mosquitto.db.
+1746098356: Error saving in-memory database, unable to open mosquitto.db.new for writing.
+1746098356: Error: Permission denied.
+1746100157: Saving in-memory database to mosquitto.db.
+1746100157: Error saving in-memory database, unable to open mosquitto.db.new for writing.
+1746100157: Error: Permission denied.
+1746101958: Saving in-memory database to mosquitto.db.
+1746101958: Error saving in-memory database, unable to open mosquitto.db.new for writing.
+1746101958: Error: Permission denied.
+1746103759: Saving in-memory database to mosquitto.db.
+1746103759: Error saving in-memory database, unable to open mosquitto.db.new for writing.
+1746103759: Error: Permission denied.
+1746105560: Saving in-memory database to mosquitto.db.
+1746105560: Error saving in-memory database, unable to open mosquitto.db.new for writing.
+1746105560: Error: Permission denied.
+1746107361: Saving in-memory database to mosquitto.db.
+1746107361: Error saving in-memory database, unable to open mosquitto.db.new for writing.
+1746107361: Error: Permission denied.
+1746109162: Saving in-memory database to mosquitto.db.
+1746109162: Error saving in-memory database, unable to open mosquitto.db.new for writing.
+1746109162: Error: Permission denied.
+1746110963: Saving in-memory database to mosquitto.db.
+1746110963: Error saving in-memory database, unable to open mosquitto.db.new for writing.
+1746110963: Error: Permission denied.
+1746112764: Saving in-memory database to mosquitto.db.
+1746112764: Error saving in-memory database, unable to open mosquitto.db.new for writing.
+1746112764: Error: Permission denied.
+1746114565: Saving in-memory database to mosquitto.db.
+1746114565: Error saving in-memory database, unable to open mosquitto.db.new for writing.
+1746114565: Error: Permission denied.
+1746116366: Saving in-memory database to mosquitto.db.
+1746116366: Error saving in-memory database, unable to open mosquitto.db.new for writing.
+1746116366: Error: Permission denied.
+1746118167: Saving in-memory database to mosquitto.db.
+1746118167: Error saving in-memory database, unable to open mosquitto.db.new for writing.
+1746118167: Error: Permission denied.
+1746119968: Saving in-memory database to mosquitto.db.
+1746119968: Error saving in-memory database, unable to open mosquitto.db.new for writing.
+1746119968: Error: Permission denied.
+1746121327: mosquitto version 2.0.21 terminating
+1746121327: Saving in-memory database to mosquitto.db.
+1746121327: Error saving in-memory database, unable to open mosquitto.db.new for writing.
+1746121327: Error: Permission denied.
+1746161563: mosquitto version 2.0.21 starting
+1746161563: Config loaded from /mosquitto/config/mosquitto.conf.
+1746161563: Opening ipv4 listen socket on port 1883.
+1746161563: Opening ipv6 listen socket on port 1883.
+1746161563: mosquitto version 2.0.21 running
+1746163364: Saving in-memory database to mosquitto.db.
+1746163364: Error saving in-memory database, unable to open mosquitto.db.new for writing.
+1746163364: Error: Permission denied.
+1746165165: Saving in-memory database to mosquitto.db.
+1746165165: Error saving in-memory database, unable to open mosquitto.db.new for writing.
+1746165165: Error: Permission denied.
+1746166966: Saving in-memory database to mosquitto.db.
+1746166966: Error saving in-memory database, unable to open mosquitto.db.new for writing.
+1746166966: Error: Permission denied.
+1746168767: Saving in-memory database to mosquitto.db.
+1746168767: Error saving in-memory database, unable to open mosquitto.db.new for writing.
+1746168767: Error: Permission denied.
+1746170568: Saving in-memory database to mosquitto.db.
+1746170568: Error saving in-memory database, unable to open mosquitto.db.new for writing.
+1746170568: Error: Permission denied.
+1746172369: Saving in-memory database to mosquitto.db.
+1746172369: Error saving in-memory database, unable to open mosquitto.db.new for writing.
+1746172369: Error: Permission denied.
+1746174170: Saving in-memory database to mosquitto.db.
+1746174170: Error saving in-memory database, unable to open mosquitto.db.new for writing.
+1746174170: Error: Permission denied.
+1746175971: Saving in-memory database to mosquitto.db.
+1746175971: Error saving in-memory database, unable to open mosquitto.db.new for writing.
+1746175971: Error: Permission denied.
+1746177772: Saving in-memory database to mosquitto.db.
+1746177772: Error saving in-memory database, unable to open mosquitto.db.new for writing.
+1746177772: Error: Permission denied.
+1746179573: Saving in-memory database to mosquitto.db.
+1746179573: Error saving in-memory database, unable to open mosquitto.db.new for writing.
+1746179573: Error: Permission denied.
+1746181374: Saving in-memory database to mosquitto.db.
+1746181374: Error saving in-memory database, unable to open mosquitto.db.new for writing.
+1746181374: Error: Permission denied.
+1746183175: Saving in-memory database to mosquitto.db.
+1746183175: Error saving in-memory database, unable to open mosquitto.db.new for writing.
+1746183175: Error: Permission denied.
+1746183231: mosquitto version 2.0.21 terminating
+1746183231: Saving in-memory database to mosquitto.db.
+1746183231: Error saving in-memory database, unable to open mosquitto.db.new for writing.
+1746183231: Error: Permission denied.
+1746183232: mosquitto version 2.0.21 starting
+1746183232: Config loaded from /mosquitto/config/mosquitto.conf.
+1746183232: Opening ipv4 listen socket on port 1883.
+1746183232: Opening ipv6 listen socket on port 1883.
+1746183232: mosquitto version 2.0.21 running
+1746183270: New connection from 172.18.0.1:41000 on port 1883.
+1746183270: New client connected from 172.18.0.1:41000 as auto-6B0E111A-B1E1-532F-E5B7-52F374907CFC (p2, c1, k60).
+1746183270: Client auto-6B0E111A-B1E1-532F-E5B7-52F374907CFC disconnected.
+1746183282: New connection from 172.18.0.1:51118 on port 1883.
+1746183282: New client connected from 172.18.0.1:51118 as auto-4342EC2F-7170-C7FD-5346-199E4D89288D (p2, c1, k60).
+1746183282: Client auto-4342EC2F-7170-C7FD-5346-199E4D89288D disconnected.
+1746183321: mosquitto version 2.0.21 terminating
+1746183321: Saving in-memory database to mosquitto.db.
+1746183321: Error saving in-memory database, unable to open mosquitto.db.new for writing.
+1746183321: Error: Permission denied.
+1746183322: mosquitto version 2.0.21 starting
+1746183322: Config loaded from /mosquitto/config/mosquitto.conf.
+1746183322: Opening ipv4 listen socket on port 1883.
+1746183322: Opening ipv6 listen socket on port 1883.
+1746183322: mosquitto version 2.0.21 running
+1746183368: mosquitto version 2.0.21 terminating
+1746183368: Saving in-memory database to mosquitto.db.
+1746183368: Error saving in-memory database, unable to open mosquitto.db.new for writing.
+1746183368: Error: Permission denied.
+1746183380: mosquitto version 2.0.21 starting
+1746183380: Config loaded from /mosquitto/config/mosquitto.conf.
+1746183380: Opening ipv4 listen socket on port 1883.
+1746183380: Opening ipv6 listen socket on port 1883.
+1746183380: mosquitto version 2.0.21 running
+1746183408: New connection from 172.18.0.1:51782 on port 1883.
+1746183408: New client connected from 172.18.0.1:51782 as auto-59E2B7C5-3550-E3F5-F6BE-021661980CEA (p2, c1, k60).
+1746183408: Client auto-59E2B7C5-3550-E3F5-F6BE-021661980CEA disconnected.
+1746183417: mosquitto version 2.0.21 terminating
+1746183417: Saving in-memory database to mosquitto.db.
+1746183417: Error saving in-memory database, unable to open mosquitto.db.new for writing.
+1746183417: Error: Permission denied.
+1746183601: mosquitto version 2.0.21 starting
+1746183601: Config loaded from /mosquitto/config/mosquitto.conf.
+1746183601: Opening ipv4 listen socket on port 1883.
+1746183601: Opening ipv6 listen socket on port 1883.
+1746183601: mosquitto version 2.0.21 running
+1746183618: New connection from 172.18.0.4:36827 on port 1883.
+1746183618: New client connected from 172.18.0.4:36827 as auto-2581071D-F585-0227-8156-A1BC2127C688 (p2, c1, k60).
+1746183618: New connection from 172.18.0.4:50913 on port 1883.
+1746183618: New client connected from 172.18.0.4:50913 as auto-EEFFE22D-5F2E-4175-3615-BCC3F53C8710 (p2, c1, k60).
+1746185402: Saving in-memory database to mosquitto.db.
+1746185402: Error saving in-memory database, unable to open mosquitto.db.new for writing.
+1746185402: Error: Permission denied.
+1746187203: Saving in-memory database to mosquitto.db.
+1746187203: Error saving in-memory database, unable to open mosquitto.db.new for writing.
+1746187203: Error: Permission denied.
+1746187612: Client auto-2581071D-F585-0227-8156-A1BC2127C688 closed its connection.
+1746187612: Client auto-EEFFE22D-5F2E-4175-3615-BCC3F53C8710 closed its connection.
+1746187950: mosquitto version 2.0.21 terminating
+1746187950: Saving in-memory database to mosquitto.db.
+1746187950: Error saving in-memory database, unable to open mosquitto.db.new for writing.
+1746187950: Error: Permission denied.
+1746189898: mosquitto version 2.0.21 starting
+1746189898: Config loaded from /mosquitto/config/mosquitto.conf.
+1746189898: Opening ipv4 listen socket on port 1883.
+1746189898: Opening ipv6 listen socket on port 1883.
+1746189898: mosquitto version 2.0.21 running
+1746190022: mosquitto version 2.0.21 terminating
+1746190022: Saving in-memory database to mosquitto.db.
+1746190022: Error saving in-memory database, unable to open mosquitto.db.new for writing.
+1746190022: Error: Permission denied.
+1746190023: mosquitto version 2.0.21 starting
+1746190023: Config loaded from /mosquitto/config/mosquitto.conf.
+1746190023: Opening ipv4 listen socket on port 1883.
+1746190023: Opening ipv6 listen socket on port 1883.
+1746190023: mosquitto version 2.0.21 running
+1746190044: mosquitto version 2.0.21 terminating
+1746190044: Saving in-memory database to mosquitto.db.
+1746190044: Error saving in-memory database, unable to open mosquitto.db.new for writing.
+1746190044: Error: Permission denied.
+1746190194: mosquitto version 2.0.21 starting
+1746190194: Config loaded from /mosquitto/config/mosquitto.conf.
+1746190194: Opening ipv4 listen socket on port 1883.
+1746190194: Opening ipv6 listen socket on port 1883.
+1746190194: mosquitto version 2.0.21 running
+1746190965: mosquitto version 2.0.21 terminating
+1746190965: Saving in-memory database to mosquitto.db.
+1746190965: Error saving in-memory database, unable to open mosquitto.db.new for writing.
+1746190965: Error: Permission denied.
+1746190965: mosquitto version 2.0.21 starting
+1746190965: Config loaded from /mosquitto/config/mosquitto.conf.
+1746190965: Opening ipv4 listen socket on port 1883.
+1746190965: Opening ipv6 listen socket on port 1883.
+1746190965: mosquitto version 2.0.21 running
+1746191235: mosquitto version 2.0.21 terminating
+1746191235: Saving in-memory database to mosquitto.db.
+1746191235: Error saving in-memory database, unable to open mosquitto.db.new for writing.
+1746191235: Error: Permission denied.
+1746191235: mosquitto version 2.0.21 starting
+1746191235: Config loaded from /mosquitto/config/mosquitto.conf.
+1746191235: Opening ipv4 listen socket on port 1883.
+1746191235: Opening ipv6 listen socket on port 1883.
+1746191235: mosquitto version 2.0.21 running

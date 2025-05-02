@@ -25,7 +25,7 @@ Cierra sesión y vuelve a entrar para que los cambios de grupo surtan efecto.
 ## 🚀 Despliegue en producción
 
 ```bash
-sudo bash deploy.sh
+sudo bash deploy.production.sh
 ```
 
 La API estará disponible en: `http://localhost:8999`
@@ -76,7 +76,7 @@ WORKERS=2
 ## Instalar
 
 ```bash
-sudo bash deploy.sh
+sudo bash deploy.production.sh
 ```
 
 
