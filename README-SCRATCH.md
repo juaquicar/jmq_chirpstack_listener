@@ -233,3 +233,12 @@ sudo docker network prune -f
 ```
 
 
+
+
+| Qué quieres ver                       | Comando                                                                           |
+| ------------------------------------- | --------------------------------------------------------------------------------- |
+| STDOUT en tiempo real                 | `docker compose logs -f chirpstack_listener_app`                                  |
+| Sólo los últimos 100 registros        | `docker compose logs --tail=100 chirpstack_listener_app`                          |
+| Entrar al contenedor y mirar ficheros | `docker exec -it chirpstack_listener_app bash`<br>`tail -f /var/log/mqtt.out.log` |
+(el stdout_logfile está definido en supervisord.conf )
+

@@ -1,44 +1,34 @@
+# docker-compose.production.yml
 services:
-  listener_app:
-    container_name: chirpstack_listener_app
-    build:
-      context: .
-    restart: always
-    env_file:
-      - .env.production
-    environment:
-      # Mantén las variables visibles en docker inspect
-      - MQTT_BROKER
-      - MQTT_PORT
-      - MQTT_CA
-      - MQTT_CERT
-      - MQTT_KEY
-      - MQTT_TOPIC
-      - MQTT_USER
-      - MQTT_PASSWORD
-    volumes:
-      - ./logs:/var/log
-    depends_on:
-      - timescaledb
-    command: python -m app.mqtt_client    # ← ejecuta solo el listener
-
-  timescaledb:
-    container_name: chirpstack_timescaledb
+  chirpstack_timescaledb:
     image: timescale/timescaledb:latest-pg14
+    container_name: chirpstack_timescaledb
     restart: always
     env_file:
-      - .env.production
-    environment:
-      POSTGRES_DB: sensordata
-      POSTGRES_USER: sensoruser
-      POSTGRES_PASSWORD: sensorpass
+      - env.production
     healthcheck:
-      test: ["CMD", "pg_isready", "-U", "sensoruser", "-d", "sensordata"]
+      # Usa $$ para que Compose no intente sustituir en el host
+      test: ["CMD-SHELL", "pg_isready -U $${POSTGRES_USER} -d $${POSTGRES_DB}"]
       interval: 5s
       timeout: 5s
       retries: 10
     volumes:
       - timescale_data:/var/lib/postgresql/data
+
+  chirpstack_listener_app:
+    build: .
+    container_name: chirpstack_listener_app
+    restart: always
+    env_file:
+      - env.production
+    entrypoint: ["./entrypoint-prod.sh"]   # API + hilo MQTT
+    depends_on:
+      chirpstack_timescaledb:
+        condition: service_healthy
+    ports:
+      - "8999:8999"
+    volumes:
+      - ./logs:/var/log                    # para ver /var/log/api.err.log
 
 volumes:
   timescale_data:

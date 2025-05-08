@@ -12,4 +12,6 @@ docker compose -f docker-compose.production.yml up -d
 echo "✅ Despliegue completado. Contenedores activos:"
 docker ps
 
-
+echo "🔧 Mostrando LOG"
+#docker exec -it chirpstack_listener_app tail -f /var/log/api.err.log
+docker logs -f chirpstack_listener_app

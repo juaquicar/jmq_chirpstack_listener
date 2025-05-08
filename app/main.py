@@ -1,16 +1,35 @@
+"""
+app/main.py
 
-from fastapi import FastAPI, Depends
-from sqlalchemy.orm import Session
-from app.database import get_db, engine, Base
-from app import models
-from app.schemas import SensorDataCreate, SensorDataResponse
-from fastapi.middleware.cors import CORSMiddleware
-from typing import List
+FastAPI + TimescaleDB + sub‑hilo MQTT.
+Expone métricas de sensores y el estado del cliente MQTT.
+"""
+
 from datetime import datetime
+from typing import List
+
+from fastapi import Depends, FastAPI, Query
+from fastapi.middleware.cors import CORSMiddleware
+from fastapi.responses import JSONResponse
+from sqlalchemy.orm import Session
+from sqlalchemy import func
+
+from app import models
+from app.database import Base, engine, get_db
+from app.schemas import SensorDataResponse
+from app.status import mqtt_status                     # ←  NUEVO
+
+# --------------------------------------------------------------------------- #
+#  Preparación de la base de datos
+# --------------------------------------------------------------------------- #
 
 Base.metadata.create_all(bind=engine)
 
-app = FastAPI()
+# --------------------------------------------------------------------------- #
+#  FastAPI
+# --------------------------------------------------------------------------- #
+
+app = FastAPI(title="ChirpStack Listener API", version="1.0.0")
 
 app.add_middleware(
     CORSMiddleware,
@@ -20,87 +39,143 @@ app.add_middleware(
     allow_headers=["*"],
 )
 
+# --------------------------------------------------------------------------- #
+#  Endpoints básicos
+# --------------------------------------------------------------------------- #
+
+
 @app.get("/health")
-def read_root():
+def health():
+    """Comprueba que el servicio FastAPI está vivo."""
     return {"status": "running"}
 
+
+@app.get("/mqtt_status")
+def mqtt_state():
+    """
+    Devuelve el estado del cliente MQTT.
+    connected : bool
+    last_rc   : int  (código devol. por el broker)
+    last_ts   : float (epoch segundos)
+    """
+    return mqtt_status
+
+
+# --------------------------------------------------------------------------- #
+#  Endpoints de mediciones simples
+# --------------------------------------------------------------------------- #
+
+
+@app.get("/data/", response_model=List[SensorDataResponse])
+def read_sensor_data(limit: int = 100, db: Session = Depends(get_db)):
+    """Devuelve las N últimas filas de sensor_data."""
+    return (
+        db.query(models.SensorData)
+        .order_by(models.SensorData.timestamp.desc())
+        .limit(limit)
+        .all()
+    )
+
+
 @app.get("/measurements/", response_model=List[SensorDataResponse])
-def get_measurements(device_id: str, start: datetime, end: datetime, db: Session = Depends(get_db)):
-    return db.query(models.SensorData)        .filter(models.SensorData.device_id == device_id)        .filter(models.SensorData.timestamp.between(start, end))        .all()
+def get_measurements(
+    device_id: str,
+    start: datetime,
+    end: datetime,
+    db: Session = Depends(get_db),
+):
+    """Filtra mediciones de un dispositivo entre dos fechas."""
+    return (
+        db.query(models.SensorData)
+        .filter(models.SensorData.device_id == device_id)
+        .filter(models.SensorData.timestamp.between(start, end))
+        .all()
+    )
 
 
 @app.get("/latest_measurements/", response_model=List[SensorDataResponse])
 def get_latest_measurements(device_id: str, db: Session = Depends(get_db)):
-    subquery = (
+    """Último valor de cada ‘key’ de un dispositivo."""
+    subq = (
         db.query(
             models.SensorData.key,
-            db.func.max(models.SensorData.timestamp).label("max_timestamp")
+            func.max(models.SensorData.timestamp).label("max_ts"),
         )
         .filter(models.SensorData.device_id == device_id)
         .group_by(models.SensorData.key)
         .subquery()
     )
 
-    query = (
+    return (
         db.query(models.SensorData)
-        .join(subquery, 
-              (models.SensorData.key == subquery.c.key) & 
-              (models.SensorData.timestamp == subquery.c.max_timestamp))
+        .join(
+            subq,
+            (models.SensorData.key == subq.c.key)
+            & (models.SensorData.timestamp == subq.c.max_ts),
+        )
         .filter(models.SensorData.device_id == device_id)
+        .all()
     )
 
-    return query.all()
-
-
-from fastapi.responses import JSONResponse
-from collections import defaultdict
 
 @app.get("/latest_measurements_grouped/")
 def get_latest_measurements_grouped(device_id: str, db: Session = Depends(get_db)):
-    subquery = (
+    """Último valor de cada ‘key’, agrupado por clave en el JSON."""
+    subq = (
         db.query(
             models.SensorData.key,
-            db.func.max(models.SensorData.timestamp).label("max_timestamp")
+            func.max(models.SensorData.timestamp).label("max_ts"),
         )
         .filter(models.SensorData.device_id == device_id)
         .group_by(models.SensorData.key)
         .subquery()
     )
 
-    query = (
+    rows = (
         db.query(models.SensorData)
-        .join(subquery, 
-              (models.SensorData.key == subquery.c.key) & 
-              (models.SensorData.timestamp == subquery.c.max_timestamp))
+        .join(
+            subq,
+            (models.SensorData.key == subq.c.key)
+            & (models.SensorData.timestamp == subq.c.max_ts),
+        )
         .filter(models.SensorData.device_id == device_id)
+        .all()
     )
 
-    grouped = {}
-    for record in query.all():
-        grouped[record.key] = {
-            "value": record.value,
-            "timestamp": record.timestamp.isoformat()
+    return JSONResponse(
+        content={
+            r.key: {"value": r.value, "timestamp": r.timestamp.isoformat()}
+            for r in rows
         }
-
-    return JSONResponse(content=grouped)
+    )
 
 
 @app.get("/timeseries/", response_model=List[SensorDataResponse])
 def get_timeseries(
-    device_id: str, 
-    key: str, 
-    start: datetime, 
-    end: datetime, 
-    db: Session = Depends(get_db)
+    device_id: str,
+    key: str,
+    start: datetime,
+    end: datetime,
+    db: Session = Depends(get_db),
 ):
-    query = (
+    """Serie temporal cruda de un sensor (sin agregación)."""
+    return (
         db.query(models.SensorData)
-        .filter(models.SensorData.device_id == device_id)
-        .filter(models.SensorData.key == key)
-        .filter(models.SensorData.timestamp.between(start, end))
+        .filter(
+            models.SensorData.device_id == device_id,
+            models.SensorData.key == key,
+            models.SensorData.timestamp.between(start, end),
+        )
         .order_by(models.SensorData.timestamp.asc())
+        .all()
     )
-    return query.all()
+
+
+# --------------------------------------------------------------------------- #
+#  Agregaciones con time‑bucket (TimescaleDB)
+# --------------------------------------------------------------------------- #
+
+_INTERVALS = {"hour": "1 hour", "day": "1 day", "week": "1 week"}
 
 
 @app.get("/timeseries/aggregated/")
@@ -109,35 +184,28 @@ def get_aggregated_timeseries(
     key: str,
     start: datetime,
     end: datetime,
-    interval: str = "hour",  # Puede ser: hour, day, week
-    db: Session = Depends(get_db)
+    interval: str = "hour",
+    db: Session = Depends(get_db),
 ):
-    interval_map = {
-        "hour": "1 hour",
-        "day": "1 day",
-        "week": "1 week"
-    }
-    if interval not in interval_map:
+    """Media por intervalo (hour/day/week)."""
+    if interval not in _INTERVALS:
         return {"error": "Invalid interval. Use one of: hour, day, week."}
 
-    sql = f'''
+    sql = """
         SELECT 
             time_bucket(%s, timestamp) AS bucket,
-            AVG(value) as average
+            AVG(value) AS average
         FROM sensor_data
         WHERE device_id = %s AND key = %s AND timestamp BETWEEN %s AND %s
         GROUP BY bucket
         ORDER BY bucket
-    '''
-    result = db.execute(sql, (
-        interval_map[interval],
-        device_id,
-        key,
-        start,
-        end
-    ))
-
-    return [{"timestamp": row[0].isoformat(), "average": row[1]} for row in result]
+    """
+    result = db.execute(
+        sql, (_INTERVALS[interval], device_id, key, start, end)
+    )
+    return [
+        {"timestamp": row[0].isoformat(), "average": row[1]} for row in result
+    ]
 
 
 @app.get("/timeseries/aggregated/full/")
@@ -146,48 +214,37 @@ def get_full_aggregated_timeseries(
     key: str,
     start: datetime,
     end: datetime,
-    interval: str = "hour",  # Puede ser: hour, day, week
-    db: Session = Depends(get_db)
+    interval: str = "hour",
+    db: Session = Depends(get_db),
 ):
-    interval_map = {
-        "hour": "1 hour",
-        "day": "1 day",
-        "week": "1 week"
-    }
-    if interval not in interval_map:
+    """Media, máximo y mínimo por intervalo."""
+    if interval not in _INTERVALS:
         return {"error": "Invalid interval. Use one of: hour, day, week."}
 
-    sql = f'''
+    sql = """
         SELECT 
             time_bucket(%s, timestamp) AS bucket,
-            AVG(value) as average,
-            MAX(value) as maximum,
-            MIN(value) as minimum
+            AVG(value) AS average,
+            MAX(value) AS maximum,
+            MIN(value) AS minimum
         FROM sensor_data
         WHERE device_id = %s AND key = %s AND timestamp BETWEEN %s AND %s
         GROUP BY bucket
         ORDER BY bucket
-    '''
-    result = db.execute(sql, (
-        interval_map[interval],
-        device_id,
-        key,
-        start,
-        end
-    ))
-
+    """
+    result = db.execute(
+        sql, (_INTERVALS[interval], device_id, key, start, end)
+    )
     return [
         {
             "timestamp": row[0].isoformat(),
             "average": row[1],
             "maximum": row[2],
-            "minimum": row[3]
+            "minimum": row[3],
         }
         for row in result
     ]
 
-
-from fastapi import Query
 
 @app.get("/timeseries/aggregated/multi/")
 def get_multi_sensor_aggregated(
@@ -196,72 +253,47 @@ def get_multi_sensor_aggregated(
     start: datetime = None,
     end: datetime = None,
     interval: str = "hour",
-    db: Session = Depends(get_db)
+    db: Session = Depends(get_db),
 ):
-    interval_map = {
-        "hour": "1 hour",
-        "day": "1 day",
-        "week": "1 week"
-    }
-    if interval not in interval_map:
+    """Agregaciones para varios dispositivos en paralelo."""
+    if interval not in _INTERVALS:
         return {"error": "Invalid interval. Use one of: hour, day, week."}
 
-    sql = f'''
+    sql = """
         SELECT 
             device_id,
             time_bucket(%s, timestamp) AS bucket,
-            AVG(value) as average,
-            MAX(value) as maximum,
-            MIN(value) as minimum
+            AVG(value) AS average,
+            MAX(value) AS maximum,
+            MIN(value) AS minimum
         FROM sensor_data
         WHERE device_id = ANY(%s) AND key = %s AND timestamp BETWEEN %s AND %s
         GROUP BY device_id, bucket
         ORDER BY device_id, bucket
-    '''
-    result = db.execute(sql, (
-        interval_map[interval],
-        device_ids,
-        key,
-        start,
-        end
-    ))
-
+    """
+    result = db.execute(
+        sql, (_INTERVALS[interval], device_ids, key, start, end)
+    )
     grouped = {}
     for row in result:
         device = row[0]
-        if device not in grouped:
-            grouped[device] = []
-        grouped[device].append({
-            "timestamp": row[1].isoformat(),
-            "average": row[2],
-            "maximum": row[3],
-            "minimum": row[4]
-        })
-
+        grouped.setdefault(device, []).append(
+            {
+                "timestamp": row[1].isoformat(),
+                "average": row[2],
+                "maximum": row[3],
+                "minimum": row[4],
+            }
+        )
     return grouped
 
 
-@app.get("/data/")
-def read_sensor_data(limit: int = 100, db: Session = Depends(get_db)):
-    return db.query(models.SensorData).order_by(models.SensorData.timestamp.desc()).limit(limit).all()
-
-
+# --------------------------------------------------------------------------- #
+#  Lanzar el cliente MQTT en un hilo “daemon”
+# --------------------------------------------------------------------------- #
 
 import threading
-from app import mqtt_client
-import os
+from app.mqtt_client import run as mqtt_run
 
-def start_mqtt():
-
-    broker_host = os.getenv("MQTT_BROKER", "localhost")
-    broker_port = int(os.getenv("MQTT_PORT", 1884))
-
-    client = mqtt_client.mqtt.Client()
-    client.on_connect = mqtt_client.on_connect
-    client.on_disconnect = mqtt_client.on_disconnect
-    client.on_message = mqtt_client.on_message
-    client.connect(broker_host, broker_port, 60)
-    client.loop_forever()
-
-mqtt_thread = threading.Thread(target=start_mqtt)
+mqtt_thread = threading.Thread(target=mqtt_run, daemon=True)
 mqtt_thread.start()

@@ -11,6 +11,7 @@ FROM python:3.12-slim
 WORKDIR /app
 ENV PYTHONUNBUFFERED=1
 COPY --from=builder /install /usr/local
+COPY app/ctx /app/ctx
 COPY . .
 RUN chmod +x entrypoint-prod.sh
 RUN mkdir -p /var/log && touch /var/log/api.err.log /var/log/mqtt.err.log
