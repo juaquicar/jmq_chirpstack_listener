@@ -32,3 +32,12 @@ docker compose \
   -p "${DEV_PROJECT}" \
   -f docker-compose.dev.yml \
   ps
+
+
+
+docker exec -it chirpstack_timescaledb_dev psql -U sensoruser -d sensordata        -c "ALTER USER sensoruser WITH PASSWORD 'sensorpass';"
+PGPASSWORD=sensorpass psql -h localhost -p 15432 -U sensoruser -d sensordata -c '\conninfo'
+
+echo "✅ Mostrando LOGs."
+docker compose -p jmq_chirpstack_listener_dev logs -f app
+
