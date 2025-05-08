@@ -3,23 +3,51 @@ services:
     image: eclipse-mosquitto:2.0
     container_name: mosquitto
     env_file:
-      - .env.dev
+      - env.dev
     ports:
-      - "1884:1883"
+      - "1884:1883"   # cliente no-TLS (útil para tests)
+      - "8883:8883"   # listener TLS
     volumes:
       - ./mosquitto/config:/mosquitto/config
       - ./mosquitto/data:/mosquitto/data
       - ./mosquitto/log:/mosquitto/log
-    restart: always
+      # monta tus certs para TLS:
+      - ./app/ctx:/mosquitto/config/ctx
+    restart: unless-stopped
+
   timescaledb:
     image: timescale/timescaledb:latest-pg15
     container_name: chirpstack_timescaledb
     env_file:
-      - .env.dev
+      - env.dev
     ports:
       - "55432:5432"
     volumes:
       - timescaledb_data:/var/lib/postgresql/data
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U $${POSTGRES_USER} -d $${POSTGRES_DB}"]
+      interval: 5s
+      timeout: 5s
+      retries: 10
+    restart: unless-stopped
+
+  chirpstack_listener_app:
+    build: .
+    container_name: chirpstack_listener_app
+    env_file:
+      - env.dev
+    entrypoint: ["./entrypoint-dev.sh"]    # API + MQTT en modo dev :contentReference[oaicite:2]{index=2}:contentReference[oaicite:3]{index=3}
+    depends_on:
+      mosquitto:
+        condition: service_started
+      timescaledb:
+        condition: service_healthy
+    ports:
+      - "8999:8999"
+    volumes:
+      - ./logs:/var/log                # para capturar logs :contentReference[oaicite:4]{index=4}:contentReference[oaicite:5]{index=5}
+      - ./app/ctx:/app/ctx             # mismas SSL que en prod
+    restart: unless-stopped
 
 volumes:
   timescaledb_data:

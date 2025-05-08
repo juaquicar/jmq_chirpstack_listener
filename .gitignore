@@ -53,3 +53,10 @@ pip-delete-this-directory.txt
 
 *.crt
 *.key
+/app/ctx/
+/app/ctx/
+/app/ctx/crt_fenix/
+/app/ctx/crt_test_mosquitto_org/
+/app/ctx/ca.crt
+/app/ctx/cert.crt
+/app/ctx/cert.key

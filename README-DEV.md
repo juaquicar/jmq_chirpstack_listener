@@ -1,92 +1,77 @@
-# Desarrollo - jmq_chirpstack_listener
 
-Este documento describe el flujo de trabajo para desarrollar en el entorno de jmq_chirpstack_listener.
+# ChirpStack Listener – Entorno de Desarrollo
 
+Este README describe los pasos para levantar tu entorno de **desarrollo**, consumiendo el mismo broker TLS y TimescaleDB en Docker.
 
-## Índice
-- [Inicio Rápido](#inicio-rápido)
-- [Flujo de Trabajo](#flujo-de-trabajo)
-- [Pruebas](#pruebas)
-- [Limpieza de Contenedores](#limpieza-de-contenedores)
-  
-## Inicio Rápido
+---
 
-Para levantar el entorno de desarrollo:
+## Prerrequisitos
 
-**Primero hay que levantar el docker de mosquitto y de timescaleDB y luego el servicio mqtt en desarrollo para ver.**
+- Docker ≥ 20.10 y Docker Compose ≥ 1.29  
+- Clonar este repositorio y posicionarse en su raíz.
 
-```bash
-bash deploy.dev.sh
-```
+## Configuración de variables
 
-## Flujo de Trabajo de Desarrollo
-
-1. **Levantar el entorno**  
-   Usa los comandos anteriores para asegurarte de tener un entorno limpio. 
-
-2. **Desarrollar nuevas funcionalidades**  
-   Modifica el código según tus necesidades. Si modificas dependencias o el `entrypoint`, recuerda reconstruir la imagen usando `--no-cache`.
-
-3. **Pruebas Funcionales**  
-   - Publicar un mensaje MQTT de prueba:
-     ```bash
-     ./mqtt_test.sh
-     ```
-   - Verificar datos en la base de datos:
-     ```bash
-     sudo docker exec -it chirpstack_timescaledb psql -U sensoruser -d sensordata -c "SELECT * FROM sensor_data ORDER BY timestamp DESC LIMIT 10;"
-     ```
-   - Consultar el API:
-     ```bash
-     curl http://localhost:8999/data/
-     ```
-   - Revisar logs y errores:
-     ```bash
-     sudo docker logs -f chirpstack_listener_app
-     sudo docker exec -it chirpstack_listener_app cat /var/log/api.err.log
-     sudo docker exec -it chirpstack_listener_app cat /var/log/mqtt.err.log
-     ```
-
-4. **Iteración y Commit**  
-   Realiza commits frecuentes conforme avanzas:
+1. Copia el `env.dev` de ejemplo:
    ```bash
-   git add .
-   git commit -m "feat: nueva funcionalidad"
-   ```
-
-5. **Limpieza**  
-   Para limpiar contenedores, volúmenes y redes:
-
-```bash
-sudo bash -c 'docker stop $(docker ps -a -q)'
-sudo bash -c 'sudo docker rm $(docker ps -aq)'
-sudo docker volume prune -f
-sudo docker network prune -f
-   ```
+   cp .env.dev.example .env.dev```
+   
 
 
-6. **Ejecutar Entorno de Dev**
+2. Rellena los valores según tu entorno (usuario, contraseña, nombres de BD…).
 
-Asegúrate de tener la base de datos y mosquitto corriendo:
+## Certificados TLS
+
+1. Sitúa tus ficheros `ca.crt`, `cert.crt` y `cert.key` en `app/ctx/`.
+2. Copia o vincula (`ln -s`) esos ficheros a `mosquitto/config/ctx/` para que el broker los use.
+
+## Arrancar el entorno
 
 ```bash
-sudo docker compose down 
-sudo docker compose -f docker-compose.dev.yml up --build
+# Construye y levanta todos los servicios en segundo plano
+./deploy.dev.sh
 ```
 
-ó 
+> Este script hace un `docker compose -f docker-compose.dev.yml down && build && up -d` y luego invoca `entrypoint-dev.sh` .
 
-```bash
-docker compose up -d timescaledb
-docker compose up -d mosquitto
+## Verificación
+
+* **Broker MQTT**
+
+  * TLS: `mosquitto_sub -h localhost -p 8883 --capath /path/to/ca.pem -t '#'`
+  * No-TLS: `mosquitto_sub -h localhost -p 1884 -t '#'`
+
+* **TimescaleDB**
+
+  ```bash
+  psql -h localhost -p 55432 -U sensoruser -d sensordata -c "\dt"
+  ```
+
+* **API FastAPI**
+  URL: [`http://localhost:8999`](http://localhost:8999)
+  Endpoints:
+
+  * `/health`
+  * `/mqtt_status`
+  * `/data/?limit=10`
+  * … y resto de la doc automática en `/docs`.
+
+## Desarrollo y hot-reload
+
+* El contenedor de la app usa `uvicorn --reload` para que los cambios en `app/` se recarguen automáticamente .
+* Para pruebas de integración con MQTT, usa el script `mqtt_test.sh` y ajusta el puerto (1884 o 8883 según quieras TLS) .
+
+---
+
+Con esto ya tienes un **procedimiento reproducible** para desarrollar contra el broker TLS y versus TimescaleDB en Docker, con el mismo juego de certificados de producción. ¡A codificar! 😊
+
 ```
 
+### Resumen de cambios principales
 
-Ejecutas Servidor Local:
+- **`env.dev`**: variables de MQTT y DB en desarrollo.  
+- **`docker-compose.dev.yml`**: añade el servicio `chirpstack_listener_app` y mapea certificados para TLS.  
+- **`README-DEV.md`**: guía paso a paso para levantar, probar y desarrollar.  
 
-```bash
-source venv/bin/activate
-pip install -r requirements.txt
-bash entrypoint-dev.sh
+Con estos tres artefactos tendrás tu sandbox de desarrollo idéntico a producción, pero con hot-reload y tu propia BD local TimescaleDB montada en Docker. ¡A por ello!
 ```
-
