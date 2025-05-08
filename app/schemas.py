@@ -1,15 +1,16 @@
-
-from pydantic import BaseModel
 from datetime import datetime
+from pydantic import BaseModel
 
-class SensorDataCreate(BaseModel):
+class SensorDataBase(BaseModel):
     device_id: str
     key: str
     value: float
     timestamp: datetime
 
-class SensorDataResponse(SensorDataCreate):
-    id: int
+    model_config = dict(from_attributes=True)  # ← reemplaza a orm_mode
 
-    class Config:
-        orm_mode = True
+class SensorDataCreate(SensorDataBase):
+    pass
+
+class SensorDataResponse(SensorDataBase):
+    id: int
