@@ -36,7 +36,7 @@ req_extensions     = san
 [ subj ]
 C  = ES
 O  = MiLab MQTT
-CN = mqtt.local            # ⇦ cambia por tu FQDN
+CN = mosquito_dev            # ⇦ cambia por tu FQDN
 
 [ san ]
 subjectAltName = @alt_names

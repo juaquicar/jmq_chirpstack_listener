@@ -27,9 +27,11 @@ services:
     ports:
       - "1884:1883"
     volumes:
-      - ./mosquitto/config:/mosquitto/config
       - ./mosquitto/data:/mosquitto/data
       - ./mosquitto/log:/mosquitto/log
+      - ./mosquitto/config:/mosquitto/config
+      - ./app/ctx/dev:/mosquitto/config/ctx   # ← certificados para el broker
+
 
   # ─────────────────────────────────────────────────────────────
   app:
@@ -39,6 +41,7 @@ services:
     entrypoint: ["/app/entrypoint-dev.sh"]
     volumes:
       - .:/app                    # hot-reload
+      - ./app/ctx/dev:/app/ctx:ro               # ← mismos certificados para el cliente
     env_file:
       - env.dev
     environment:
