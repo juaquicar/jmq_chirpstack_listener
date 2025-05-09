@@ -58,3 +58,7 @@ pip-delete-this-directory.txt
 /app/ctx/fenix/*
 /app/ctx/crt_test_mosquitto_org/*
 /mosquitto/config/ctx/*
+
+
+env.production
+env.dev
