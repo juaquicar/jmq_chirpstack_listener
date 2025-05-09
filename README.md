@@ -48,7 +48,7 @@ DB_PASS=
 # MQTT
 MQTT_BROKER=
 MQTT_PORT=
-MQTT_TOPIC=application/1/device/+/event/up
+MQTT_TOPIC=application/+/device/+/event/up
 
 # Puerto API
 APP_MODULE=app.main:app

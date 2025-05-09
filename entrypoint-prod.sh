@@ -20,6 +20,8 @@ echo "Esperando 15s a que la BD arranque..."
 sleep 15
 
 gunicorn "$APP_MODULE" --workers "$WORKERS" --worker-class uvicorn.workers.UvicornWorker \
-  --bind "$HOST:$PORT" --log-level debug --access-logfile "$API_LOG" --error-logfile "$API_LOG" || true
+  --bind "$HOST:$PORT" --log-level info \
+  --access-logfile "$API_LOG" --error-logfile "$API_LOG"
 
-tail -f /dev/null
+# Si Gunicorn sale, termina el contenedor:
+exit $?

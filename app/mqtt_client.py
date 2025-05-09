@@ -63,6 +63,11 @@ def on_disconnect(client: mqtt.Client, userdata: Any, rc: int):
 
 
 def on_message(client: mqtt.Client, userdata: Any, msg: mqtt.MQTTMessage):
+
+    if 'device' in msg.topic:
+        print("📨 TOPIC:", msg.topic)
+        print("📨 PAYLOAD:", msg.payload.decode())
+
     if msg.topic.startswith("$SYS/"):
         return          # ignoramos mensajes de sistema
 

@@ -55,6 +55,6 @@ pip-delete-this-directory.txt
 *.key
 *.csr
 /app/ctx/*
-/app/ctx/crt_fenix/*
+/app/ctx/fenix/*
 /app/ctx/crt_test_mosquitto_org/*
 /mosquitto/config/ctx/*
