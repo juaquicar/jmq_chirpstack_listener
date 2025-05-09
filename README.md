@@ -120,6 +120,10 @@ bash deploy.production.sh     # Compila de nuevo y reinicia sin pérdida de dato
 
 Los datos persisten porque el volumen de TimescaleDB nunca se elimina.
 
+```bash
+user@ubuntu:~$ sudo ls /var/lib/docker/volumes
+```
+
 ---
 
 ## 🧰 API de un vistazo

@@ -150,6 +150,15 @@ sudo docker network prune -f
 
 ---
 
+## Volumes
+
+```bash
+user@ubuntu:~$ sudo ls /var/lib/docker/volumes | grep timescale
+jmq_chirpstack_listener_dev_timescaledb_data_dev
+jmq_chirpstack_listener_timescale_data
+jmq_chirpstack_listener_timescaledb_data
+```
+
 
 ## 🤝 Contribuir
 
@@ -157,6 +166,7 @@ sudo docker network prune -f
 2. Crea rama `git checkout -b feat/mi-funcionalidad`.
 3. Añade tests en `tests/` y actualiza este README-DEV.md si procede.
 4. Envía *pull request* contra `main`.
+
 
 ¡Gracias por mejorar el proyecto! 🚀
 
