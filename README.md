@@ -1,4 +1,4 @@
-# ChirpStack Listener — README (Producción)
+# ChirpStack Listener
 
 Servicio **todo-en-uno** que se suscribe al broker MQTT de **ChirpStack**, almacena la telemetría *uplink* en **TimescaleDB** y la expone mediante **FastAPI**, todo orquestado con **Docker Compose** para entornos de producción.
 
