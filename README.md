@@ -151,6 +151,13 @@ Distribuido bajo la licencia MIT. Consulta el archivo `LICENSE` para más detall
 
 ---
 
+## 👤 Author
+
+**Juanma Quijada**  
+🔗 [GitHub](https://github.com/juaquicar)
+
+---
+
 > **¿Buscas la guía de desarrollo?**
 > Visita **README-DEV.md** para instrucciones completas de desarrollo local.
 
