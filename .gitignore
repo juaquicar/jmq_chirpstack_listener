@@ -6,12 +6,6 @@
 *.swp
 
 
-
-# Archivos de Docker específicos
-docker-compose.override.yml
-docker-compose.dev.yml
-docker-compose.local.yml
-
 # Volúmenes y otros directorios montados
 volumes/
 data/
@@ -56,7 +50,6 @@ pip-delete-this-directory.txt
 *.csr
 /app/ctx/*
 /app/ctx/fenix/*
-/app/ctx/crt_test_mosquitto_org/*
 /mosquitto/config/ctx/*
 
 
