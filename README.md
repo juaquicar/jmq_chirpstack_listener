@@ -128,14 +128,21 @@ user@ubuntu:~$ sudo ls /var/lib/docker/volumes
 
 ## 🧰 API de un vistazo
 
-| Endpoint                                       | Descripción                         |
-| ---------------------------------------------- | ----------------------------------- |
-| `GET /health`                                  | Prueba de vida del servicio         |
-| `GET /mqtt_status`                             | Estado actual de la conexión MQTT   |
-| `GET /data?limit=N`                            | Devuelve las últimas *N* filas      |
-| `GET /latest_measurements/?device_id=`         | Última medida por clave             |
-| `GET /timeseries/?device_id=&key=&start=&end=` | Serie temporal bruta                |
-| `GET /timeseries/aggregated/?…&interval=`      | Promedios por intervalo configurado |
+| Endpoint                                                                  | Descripción                                                 |
+| ------------------------------------------------------------------------- | ----------------------------------------------------------- |
+| `GET /health`                                                             | Prueba de vida del servicio                                 |
+| `GET /mqtt_status`                                                        | Estado actual de la conexión MQTT                           |
+| `GET /data?limit=N`                                                       | Devuelve las últimas *N* filas                              |
+| `GET /measurements?device_id=&start=&end=`                                | Filtra mediciones de un dispositivo entre dos fechas        |
+| `GET /latest_measurements?device_id=`                                     | Última medida de cada clave para un dispositivo             |
+| `GET /latest_measurements_grouped?device_id=`                             | Última medida de cada clave (JSON agrupado por clave)       |
+| `GET /latest_measurements_all/`                                           | Última medida de cada clave para **todos** los dispositivos |
+| `GET /latest_measurements_all_grouped/`                                   | Última medida de cada clave, agrupado por dispositivo       |
+| `GET /timeseries?device_id=&key=&start=&end=`                             | Serie temporal cruda de un sensor                           |
+| `GET /timeseries/aggregated?device_id=&key=&start=&end=&interval=`        | Media por intervalo (`hour`/`day`/`week`)                   |
+| `GET /timeseries/aggregated/full?device_id=&key=&start=&end=&interval=`   | Media, máximo y mínimo por intervalo                        |
+| `GET /timeseries/aggregated/multi?device_ids=&key=&start=&end=&interval=` | Agregaciones (avg/max/min) para varios dispositivos         |
+
 
 La documentación interactiva completa está disponible en `/docs` o `/redoc`.
 

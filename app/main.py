@@ -287,6 +287,72 @@ def get_multi_sensor_aggregated(
         )
     return grouped
 
+@app.get("/latest_measurements_all/", response_model=List[SensorDataResponse])
+def get_latest_measurements_all(db: Session = Depends(get_db)):
+    """
+    Último valor de cada (device_id, key) en toda la tabla.
+    """
+    subq = (
+        db.query(
+            models.SensorData.device_id,
+            models.SensorData.key,
+            func.max(models.SensorData.timestamp).label("max_ts"),
+        )
+        .group_by(models.SensorData.device_id, models.SensorData.key)
+        .subquery()
+    )
+
+    return (
+        db.query(models.SensorData)
+        .join(
+            subq,
+            (models.SensorData.device_id == subq.c.device_id)
+            & (models.SensorData.key == subq.c.key)
+            & (models.SensorData.timestamp == subq.c.max_ts),
+        )
+        .all()
+    )
+
+
+@app.get("/latest_measurements_all_grouped/")
+def get_latest_measurements_all_grouped(db: Session = Depends(get_db)):
+    """
+    Último valor de cada key, agrupado por device_id.
+    """
+    subq = (
+        db.query(
+            models.SensorData.device_id,
+            models.SensorData.key,
+            func.max(models.SensorData.timestamp).label("max_ts"),
+        )
+        .group_by(models.SensorData.device_id, models.SensorData.key)
+        .subquery()
+    )
+
+    rows = (
+        db.query(models.SensorData)
+        .join(
+            subq,
+            (models.SensorData.device_id == subq.c.device_id)
+            & (models.SensorData.key == subq.c.key)
+            & (models.SensorData.timestamp == subq.c.max_ts),
+        )
+        .all()
+    )
+
+    # Construimos un dict de la forma { device_id: { key: { value, timestamp } } }
+    result = {}
+    for r in rows:
+        result.setdefault(r.device_id, {})[r.key] = {
+            "value": r.value,
+            "timestamp": r.timestamp.isoformat(),
+        }
+
+    return JSONResponse(content=result)
+
+
+
+
 
 # --------------------------------------------------------------------------- #
 #  Lanzar el cliente MQTT en un hilo “daemon”
