@@ -1,10 +1,3 @@
-"""
-app/main.py
-
-FastAPI + TimescaleDB + sub‑hilo MQTT.
-Expone métricas de sensores y el estado del cliente MQTT.
-"""
-
 from datetime import datetime
 from typing import List
 
@@ -12,12 +5,12 @@ from fastapi import Depends, FastAPI, Query
 from fastapi.middleware.cors import CORSMiddleware
 from fastapi.responses import JSONResponse
 from sqlalchemy.orm import Session
-from sqlalchemy import func
+from sqlalchemy import func, text
 
 from app import models
 from app.database import Base, engine, get_db
 from app.schemas import SensorDataResponse
-from app.status import mqtt_status                     # ←  NUEVO
+from app.status import mqtt_status
 
 # --------------------------------------------------------------------------- #
 #  Preparación de la base de datos
@@ -29,7 +22,7 @@ Base.metadata.create_all(bind=engine)
 #  FastAPI
 # --------------------------------------------------------------------------- #
 
-app = FastAPI(title="ChirpStack Listener API", version="1.0.0")
+app = FastAPI(title="ChirpStack Listener API", version="1.0.0")
 
 app.add_middleware(
     CORSMiddleware,
@@ -170,9 +163,8 @@ def get_timeseries(
         .all()
     )
 
-
 # --------------------------------------------------------------------------- #
-#  Agregaciones con time‑bucket (TimescaleDB)
+#  Agregaciones con time-bucket (TimescaleDB)
 # --------------------------------------------------------------------------- #
 
 _INTERVALS = {"hour": "1 hour", "day": "1 day", "week": "1 week"}
@@ -191,22 +183,28 @@ def get_aggregated_timeseries(
     if interval not in _INTERVALS:
         return {"error": "Invalid interval. Use one of: hour, day, week."}
 
-    sql = """
+    sql = text("""
         SELECT 
-            time_bucket(%s, timestamp) AS bucket,
+            time_bucket(:interval, timestamp) AS bucket,
             AVG(value) AS average
         FROM sensor_data
-        WHERE device_id = %s AND key = %s AND timestamp BETWEEN %s AND %s
+        WHERE device_id = :device_id AND key = :key AND timestamp BETWEEN :start AND :end
         GROUP BY bucket
         ORDER BY bucket
-    """
+    """)
     result = db.execute(
-        sql, (_INTERVALS[interval], device_id, key, start, end)
+        sql,
+        {
+            "interval": _INTERVALS[interval],
+            "device_id": device_id,
+            "key": key,
+            "start": start,
+            "end": end,
+        }
     )
     return [
         {"timestamp": row[0].isoformat(), "average": row[1]} for row in result
     ]
-
 
 @app.get("/timeseries/aggregated/full/")
 def get_full_aggregated_timeseries(
@@ -221,19 +219,26 @@ def get_full_aggregated_timeseries(
     if interval not in _INTERVALS:
         return {"error": "Invalid interval. Use one of: hour, day, week."}
 
-    sql = """
+    sql = text("""
         SELECT 
-            time_bucket(%s, timestamp) AS bucket,
+            time_bucket(:interval, timestamp) AS bucket,
             AVG(value) AS average,
             MAX(value) AS maximum,
             MIN(value) AS minimum
         FROM sensor_data
-        WHERE device_id = %s AND key = %s AND timestamp BETWEEN %s AND %s
+        WHERE device_id = :device_id AND key = :key AND timestamp BETWEEN :start AND :end
         GROUP BY bucket
         ORDER BY bucket
-    """
+    """)
     result = db.execute(
-        sql, (_INTERVALS[interval], device_id, key, start, end)
+        sql,
+        {
+            "interval": _INTERVALS[interval],
+            "device_id": device_id,
+            "key": key,
+            "start": start,
+            "end": end,
+        }
     )
     return [
         {
@@ -255,25 +260,33 @@ def get_multi_sensor_aggregated(
     interval: str = "hour",
     db: Session = Depends(get_db),
 ):
-    """Agregaciones para varios dispositivos en paralelo."""
     if interval not in _INTERVALS:
         return {"error": "Invalid interval. Use one of: hour, day, week."}
 
-    sql = """
+    sql = text("""
         SELECT 
             device_id,
-            time_bucket(%s, timestamp) AS bucket,
+            time_bucket(:interval, timestamp) AS bucket,
             AVG(value) AS average,
             MAX(value) AS maximum,
             MIN(value) AS minimum
         FROM sensor_data
-        WHERE device_id = ANY(%s) AND key = %s AND timestamp BETWEEN %s AND %s
+        WHERE device_id = ANY(:device_ids) AND key = :key AND timestamp BETWEEN :start AND :end
         GROUP BY device_id, bucket
         ORDER BY device_id, bucket
-    """
+    """)
+
     result = db.execute(
-        sql, (_INTERVALS[interval], device_ids, key, start, end)
+        sql,
+        {
+            "interval": _INTERVALS[interval],
+            "device_ids": device_ids,
+            "key": key,
+            "start": start,
+            "end": end,
+        }
     )
+
     grouped = {}
     for row in result:
         device = row[0]
